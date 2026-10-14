@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Petar Pan | Predškolska ustanova Kragujevac</title>
+<meta name="description" content="Predškolska ustanova „Petar Pan” Kragujevac: jaslice, vrtić i pripremni predškolski program, NTC licenca, sopstvena kuhinja sa nutricionistom. Ilindenska 103 i Radovana Mićovića 22a.">
+<link rel="icon" href="assets/logo-icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --green:#76a440;
+  --green-d:#4a7a22;
+  --green-dd:#2f5214;
+  --forest:#1d3317;
+  --green-soft:#eef5e4;
+  --red:#e9573f;
+  --red-d:#c2402a;
+  --red-soft:#fde8e2;
+  --cream:#fdf7bd;
+  --cream-soft:#fffbe6;
+  --paper:#fffcf3;
+  --skin:#eccaaa;
+  --brown:#69382f;
+  --ink:#2a2119;
+  --muted:#5e544a;
+  --line:rgba(42,33,25,.12);
+  --gold:#ffd25e;
+  --r-lg:32px;
+  --r-md:24px;
+  --r-sm:16px;
+  --sec:128px;
+  --shadow:0 24px 48px -24px rgba(42,33,25,.32);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{font-family:'Nunito',sans-serif;font-size:16px;line-height:1.6;color:var(--ink);background:var(--paper);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+h1,h2,h3,h4{font-family:'Baloo 2',sans-serif;font-weight:600;line-height:1.12;color:var(--ink);text-wrap:balance}
+p,li,summary,figcaption{text-wrap:pretty}
+.s{display:block;text-wrap:balance}
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+@media (max-width:768px){.wrap{padding:0 20px}:root{--sec:80px}}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+section{padding:var(--sec) 0;position:relative}
+
+/* eyebrow + heads */
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-d);margin-bottom:16px}
+.eyebrow svg{width:20px;height:20px;flex:none}
+.head{max-width:720px;margin-bottom:56px}
+.head.center{margin-left:auto;margin-right:auto;text-align:center}
+.head h2{font-size:clamp(32px,4.2vw,52px);margin-bottom:16px}
+.head p{font-size:20px;color:var(--muted)}
+.head h2 em,.big-quote em{font-style:normal;color:var(--red)}
+.head h2 em{white-space:nowrap}
+.on-dark .head h2,.on-dark h3{color:#fff}
+.on-dark .head p{color:rgba(255,255,255,.76)}
+.on-dark .eyebrow{color:var(--gold)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;font-family:'Baloo 2',sans-serif;font-weight:600;font-size:16px;line-height:1;padding:16px 28px;border-radius:999px;border:2px solid transparent;white-space:nowrap;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s,color .2s}
+.btn-primary{background:var(--green-d);color:#fff;box-shadow:0 4px 0 var(--green-dd)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 0 var(--green-dd)}
+.btn-primary:active{transform:translateY(4px);box-shadow:0 0 0 var(--green-dd)}
+.btn-ghost{background:#fff;border-color:var(--ink);color:var(--ink);box-shadow:0 4px 0 var(--ink)}
+.btn-ghost:hover{transform:translateY(-2px);box-shadow:0 8px 0 var(--ink)}
+.btn .arr{width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.2);display:grid;place-items:center;margin-right:-12px}
+.btn .arr svg{width:16px;height:16px}
+
+/* top bar */
+.topbar{background:var(--forest);color:rgba(255,255,255,.86);font-size:12px;font-weight:700}
+.topbar .wrap{display:flex;gap:24px;align-items:center;justify-content:space-between;min-height:40px}
+.topbar .grp{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.topbar a{text-decoration:none}
+.topbar a:hover{color:var(--gold)}
+.topbar svg{width:16px;height:16px;vertical-align:-4px;margin-right:4px;color:var(--gold)}
+@media (max-width:991px){.topbar .hide-md{display:none}}
+@media (max-width:600px){.topbar{display:none}}
+
+/* header */
+header.site{position:sticky;top:0;z-index:60;background:rgba(255,252,243,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
+header.site.scrolled{border-color:var(--line);box-shadow:0 8px 24px -16px rgba(42,33,25,.24)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;height:80px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand .ic{width:52px;height:52px;border-radius:50%;background:var(--cream);overflow:hidden;flex:none;box-shadow:inset 0 0 0 2px var(--green)}
+.brand .ic img{width:100%;height:100%;transform:translateY(4px) scale(1.08)}
+.brand b{display:block;font-family:'Baloo 2';font-weight:600;font-size:24px;line-height:1}
+.brand small{display:block;font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.links{display:flex;gap:4px;align-items:center}
+.links a{font-weight:700;font-size:16px;text-decoration:none;padding:8px 12px;border-radius:999px;transition:background .2s,color .2s}
+.links a:hover{background:var(--green-soft);color:var(--green-dd)}
+.burger{display:none;width:48px;height:48px;border-radius:50%;background:var(--green-soft);align-items:center;justify-content:center;flex-direction:column;gap:4px}
+.burger span{display:block;width:20px;height:2px;background:var(--ink);border-radius:2px;transition:transform .25s,opacity .25s}
+.burger[aria-expanded=true] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded=true] span:nth-child(2){opacity:0}
+.burger[aria-expanded=true] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.mmenu{position:fixed;inset:0;z-index:55;background:var(--paper);padding:120px 24px 40px;display:flex;flex-direction:column;gap:8px;transform:translateY(-100%);transition:transform .4s cubic-bezier(.7,0,.2,1);overflow:auto}
+.mmenu.open{transform:none}
+.mmenu a{font-family:'Baloo 2';font-size:28px;font-weight:600;text-decoration:none;padding:8px 0;border-bottom:1px dashed var(--line)}
+.mmenu .btn{margin-top:24px;font-size:20px;border-bottom:0}
+@media (max-width:1140px){.links{display:none}.burger{display:flex}.nav .btn-primary{display:none}}
+@media (max-width:420px){.brand small{display:none}}
+
+/* ===== HERO ===== */
+.hero{padding:56px 0 112px;overflow:hidden;background:
+  radial-gradient(1200px 600px at 85% -10%,#fff6c9 0%,rgba(255,246,201,0) 60%),
+  linear-gradient(180deg,var(--paper),#fff8e4)}
+.hero .clouds{position:absolute;inset:0;pointer-events:none}
+.hero .cloud{position:absolute;fill:#fff;opacity:.9;filter:drop-shadow(0 8px 16px rgba(118,164,64,.08))}
+.hero-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:48px;align-items:center;position:relative;z-index:2}
+.hero-copy{container-type:inline-size;min-width:0}
+.pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:2px solid var(--ink);border-radius:999px;padding:4px 16px 4px 4px;font-weight:800;font-size:12px;letter-spacing:.06em;text-transform:uppercase;box-shadow:0 4px 0 var(--ink);margin-bottom:28px}
+.pill i{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--green);color:#fff;font-style:normal}
+.pill i svg{width:16px;height:16px}
+.hero h1{font-size:64px;font-size:clamp(36px,6vw,88px);font-size:clamp(36px,13.6cqi,88px);font-weight:700;letter-spacing:-.01em;line-height:1.02;margin-bottom:28px}
+.hero h1 .ln{display:block;white-space:nowrap}
+.hero h1 .lete{position:relative;color:var(--red);display:inline-block;transition:text-shadow .6s}
+.hero h1 .lete svg{position:absolute;left:-4%;bottom:-16%;width:108%;height:32%;overflow:visible}
+.hero h1 .lete path{fill:none;stroke:var(--gold);stroke-width:8;stroke-linecap:round;stroke-dasharray:240;stroke-dashoffset:0}
+html.js .hero h1 .lete path{stroke-dashoffset:240;transition:stroke-dashoffset 1s .1s cubic-bezier(.6,0,.2,1)}
+html.js .hero h1 .lete.glow path{stroke-dashoffset:0}
+.hero h1 .lete.glow{text-shadow:0 0 24px rgba(255,210,94,.75)}
+.hero .lead{font-size:20px;color:var(--muted);max-width:540px;margin-bottom:36px}
+.hero .ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:44px}
+.hero-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:560px}
+.hero-facts div{border-top:2px dashed var(--line);padding-top:16px}
+.hero-facts b{display:block;font-family:'Baloo 2';font-size:28px;line-height:1;color:var(--green-d);margin-bottom:4px}
+.hero-facts span{font-size:12px;font-weight:700;color:var(--muted);line-height:1.4;display:block}
+
+.hero-art{position:relative;aspect-ratio:1/1.02;max-width:620px;justify-self:end;width:100%}
+.hero-art .sun{position:absolute;width:72%;aspect-ratio:1;border-radius:50%;background:var(--cream);left:18%;top:6%;box-shadow:0 0 0 24px rgba(253,247,189,.45)}
+.hero-art .card{position:absolute;margin:0;background:#fff;box-shadow:var(--shadow);transition:transform 1s cubic-bezier(.3,1.4,.5,1),filter 1s ease}
+.hero-art .card img{width:100%;height:100%;object-fit:cover}
+.c-main{left:14%;top:4%;width:64%;height:76%;border-radius:999px 999px 32px 32px;padding:12px;--r:0deg}
+.c-main img{border-radius:999px 999px 24px 24px}
+.c-main .frame{position:absolute;inset:12px;border-radius:999px 999px 24px 24px;pointer-events:none;background:
+  linear-gradient(90deg,transparent calc(50% - 4px),rgba(255,255,255,.9) calc(50% - 4px),rgba(255,255,255,.9) calc(50% + 4px),transparent calc(50% + 4px)),
+  linear-gradient(180deg,transparent 42%,rgba(255,255,255,.9) 42%,rgba(255,255,255,.9) calc(42% + 8px),transparent calc(42% + 8px))}
+.polaroid{padding:12px 12px 44px;border-radius:12px}
+.polaroid img{border-radius:4px}
+.polaroid figcaption{position:absolute;left:12px;right:12px;bottom:12px;text-align:center;font-family:'Baloo 2';font-weight:500;font-size:16px;line-height:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.c-a{left:-2%;bottom:4%;width:40%;aspect-ratio:1/1.06;--r:-7deg;transform:rotate(var(--r))}
+.c-b{right:-2%;bottom:12%;width:34%;aspect-ratio:.82;--r:6deg;transform:rotate(var(--r))}
+.c-a img,.c-b img{height:calc(100% - 0px)}
+.tape{position:absolute;top:-12px;left:50%;width:88px;height:24px;margin-left:-44px;background:rgba(253,247,189,.85);transform:rotate(-4deg);box-shadow:0 2px 4px rgba(0,0,0,.06)}
+.badge{position:absolute;right:4%;top:0;width:128px;height:128px;z-index:4}
+.badge .ring{position:absolute;inset:0;animation:spin 24s linear infinite}
+.badge .ring text{font-family:'Nunito';font-weight:800;font-size:12px;letter-spacing:.2em;fill:var(--ink)}
+.badge .mid{position:absolute;inset:24px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;text-align:center;font-family:'Baloo 2';font-weight:600;font-size:20px;line-height:1;box-shadow:0 4px 0 var(--red-d)}
+.badge .mid small{display:block;font-size:12px;font-weight:500;margin-top:4px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.chip{position:absolute;z-index:4;display:flex;align-items:center;gap:12px;background:#fff;border-radius:999px;padding:8px 20px 8px 8px;box-shadow:var(--shadow);font-weight:800;font-size:12px;line-height:1.3}
+.chip i{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--green-soft);color:var(--green-d);flex:none}
+.chip i svg{width:20px;height:20px}
+.chip b{display:block;font-family:'Baloo 2';font-size:16px;font-weight:600}
+.chip.time{left:-4%;top:24%}
+.chip.kitchen{right:-6%;bottom:-2%}
+.chip.kitchen i{background:var(--red-soft);color:var(--red-d)}
+
+/* fairy + dust */
+#dust{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:5}
+.fairy{position:absolute;left:0;top:0;width:0;height:0;z-index:6;pointer-events:none;opacity:0;will-change:transform}
+.fairy .core{position:absolute;left:-6px;top:-6px;width:12px;height:12px;border-radius:50%;background:#fff;box-shadow:0 0 8px 4px #fff3c4,0 0 24px 12px rgba(255,210,94,.8),0 0 56px 28px rgba(255,210,94,.32)}
+.fairy .wing{position:absolute;top:-16px;width:16px;height:24px;border-radius:50%;background:radial-gradient(circle at 50% 30%,rgba(255,255,255,.95),rgba(214,240,255,.55));border:1px solid rgba(255,255,255,.9);animation:flap .1s ease-in-out infinite alternate}
+.fairy .wing.l{left:-16px;transform-origin:100% 80%;rotate:-24deg}
+.fairy .wing.r{left:0;transform-origin:0 80%;rotate:24deg}
+@keyframes flap{from{transform:scaleX(1)}to{transform:scaleX(.24)}}
+
+/* hero intro states (JS only) */
+html.js .hero-art .card{filter:grayscale(.85) brightness(1.04) contrast(.9)}
+html.js .hero-art .c-main{transform:translateY(24px)}
+html.js .hero-art .c-a{transform:translateY(32px) rotate(-2deg)}
+html.js .hero-art .c-b{transform:translateY(32px) rotate(2deg)}
+html.js .hero-art .card.up{filter:none}
+html.js .hero-art .c-main.up{transform:translateY(0)}
+html.js .hero-art .c-a.up{transform:translateY(0) rotate(var(--r))}
+html.js .hero-art .c-b.up{transform:translateY(0) rotate(var(--r))}
+.hero-art .card.float{animation:bob 6s ease-in-out infinite}
+.hero-art .c-a.float{animation-delay:-2s}.hero-art .c-b.float{animation-delay:-4s}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -12px}}
+html.js .chip,html.js .badge{opacity:0;transform:scale(.6);transition:opacity .5s,transform .6s cubic-bezier(.3,1.6,.5,1)}
+html.js .chip.in,html.js .badge.in{opacity:1;transform:none}
+
+@media (max-width:991px){
+  .hero-grid{grid-template-columns:1fr;gap:56px}
+  .hero-art{justify-self:center;max-width:560px}
+  .hero{padding-bottom:96px}
+}
+@media (max-width:360px){.xs-hide{display:none}}
+@media (max-width:600px){
+  .hero{padding-top:32px}
+  .hero-facts b{font-size:24px}
+  .badge{width:96px;height:96px;right:4px;top:-4px}
+  .badge .mid{inset:20px;font-size:16px}
+  .badge .ring text{font-size:12px}
+  .chip{padding:4px 12px 4px 4px}
+  .chip i{width:28px;height:28px}
+  .chip b{font-size:12px}
+  .chip span{font-size:0;line-height:1}
+  .chip.time{left:0;top:20%}
+  .chip.kitchen{right:0;bottom:-4%}
+  .polaroid{padding:8px 8px 32px}
+  .polaroid figcaption{font-size:12px;bottom:8px;line-height:16px}
+}
+
+/* wave divider */
+.wave{display:block;width:100%;height:48px}
+.wave-top{position:absolute;left:0;right:0;top:-47px}
+
+/* ===== TICKER ===== */
+.ticker{background:var(--green-d);color:#fff;overflow:hidden;padding:20px 0;position:relative;z-index:3}
+.ticker .track{display:flex;gap:40px;width:max-content;animation:tick 48s linear infinite}
+.ticker span{font-family:'Baloo 2';font-weight:500;font-size:24px;white-space:nowrap;display:flex;align-items:center;gap:40px}
+.ticker span::after{content:"";width:20px;height:20px;background:var(--gold);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ===== O NAMA ===== */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.big-quote{font-family:'Baloo 2';font-weight:500;font-size:clamp(28px,3.2vw,40px);line-height:1.24;margin-bottom:32px}
+.big-quote::before{content:"“";display:block;font-size:96px;line-height:.6;color:var(--green);margin-bottom:12px}
+.about-who{background:var(--green-soft);border-radius:var(--r-md);padding:28px 32px;margin-bottom:40px}
+.about-who h3{font-size:20px;margin-bottom:8px}
+.about-who p{color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{text-align:left}
+.stat b{display:block;font-family:'Baloo 2';font-weight:700;font-size:48px;line-height:1;color:var(--red)}
+.stat span{display:block;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:8px;line-height:1.4}
+.offer{display:grid;gap:16px}
+.offer-item{display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:start;background:#fff;border:2px solid var(--ink);border-radius:var(--r-md);padding:20px 24px;box-shadow:0 4px 0 var(--ink);transition:transform .25s,box-shadow .25s}
+.offer-item:hover{transform:translate(-4px,-4px);box-shadow:8px 8px 0 var(--ink)}
+.offer-item .ico{width:64px;height:64px;border-radius:20px;display:grid;place-items:center}
+.offer-item .ico svg{width:32px;height:32px}
+.offer-item:nth-child(5n+1) .ico{background:var(--green-soft);color:var(--green-d)}
+.offer-item:nth-child(5n+2) .ico{background:var(--red-soft);color:var(--red-d)}
+.offer-item:nth-child(5n+3) .ico{background:var(--cream);color:var(--brown)}
+.offer-item:nth-child(5n+4) .ico{background:#e4f1f8;color:#2d6b8a}
+.offer-item:nth-child(5n+5) .ico{background:#f3e8f7;color:#7a3f8f}
+.offer-item h3{font-size:20px;margin-bottom:4px}
+.offer-item p{color:var(--muted);font-size:16px}
+@media (max-width:991px){.about-grid{grid-template-columns:1fr;gap:56px}}
+@media (max-width:600px){.stats{grid-template-columns:repeat(2,1fr);gap:24px}.stat b{font-size:40px}.offer-item{grid-template-columns:48px 1fr;padding:16px 20px;gap:16px}.offer-item .ico{width:48px;height:48px;border-radius:16px}.offer-item .ico svg{width:24px;height:24px}}
+
+/* ===== PROGRAMI ===== */
+.programs{background:var(--cream-soft)}
+.tabs{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px}
+.tab{display:flex;align-items:center;gap:12px;padding:12px 24px 12px 12px;border-radius:999px;border:2px solid var(--ink);background:#fff;font-family:'Baloo 2';font-weight:600;font-size:20px;transition:background .2s,color .2s,transform .2s;box-shadow:0 4px 0 var(--ink)}
+.tab .age{font-family:'Nunito';font-size:12px;font-weight:800;background:var(--cream);border-radius:999px;padding:4px 12px;color:var(--ink)}
+.tab:hover{transform:translateY(-2px)}
+.tab[aria-selected=true]{background:var(--ink);color:#fff}
+.tab[aria-selected=true] .age{background:var(--gold)}
+.panel{display:grid;grid-template-columns:.9fr 1.1fr;gap:0;background:#fff;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);border:2px solid var(--ink)}
+.panel[hidden]{display:none}
+.panel .ph{position:relative;min-height:440px}
+.panel .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.panel .ph .who{position:absolute;left:20px;bottom:20px;right:20px;background:rgba(255,255,255,.94);border-radius:var(--r-sm);padding:12px 16px;font-weight:700;font-size:16px;line-height:1.4}
+.panel .ph .who b{color:var(--green-d)}
+.panel .tx{padding:48px}
+.panel h3{font-size:32px;margin-bottom:12px}
+.panel .intro{color:var(--muted);font-size:20px;margin-bottom:24px}
+.ticks{list-style:none;display:grid;gap:12px}
+.ticks li{display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:start}
+.ticks li::before{content:"";width:28px;height:28px;border-radius:50%;background:var(--green-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234a7a22' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/16px no-repeat}
+.ticks b{font-weight:800}
+html.js .panel:not([hidden]) .ticks li{animation:pop .5s backwards cubic-bezier(.3,1.4,.5,1)}
+html.js .panel .ticks li:nth-child(2){animation-delay:.06s}
+html.js .panel .ticks li:nth-child(3){animation-delay:.12s}
+html.js .panel .ticks li:nth-child(4){animation-delay:.18s}
+html.js .panel .ticks li:nth-child(5){animation-delay:.24s}
+html.js .panel .ticks li:nth-child(6){animation-delay:.3s}
+@keyframes pop{from{opacity:0;transform:translateY(12px)}}
+.extras{margin-top:56px}
+.extras h3{font-size:24px;margin-bottom:20px}
+.extra-row{display:flex;flex-wrap:wrap;gap:12px}
+.extra{display:inline-flex;align-items:center;gap:8px;background:#fff;border:2px dashed var(--green);border-radius:999px;padding:8px 20px;font-weight:700}
+.extra::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--red)}
+@media (max-width:991px){.panel{grid-template-columns:1fr}.panel .ph{min-height:320px}.panel .tx{padding:32px 24px}}
+@media (max-width:600px){.tab{font-size:16px;padding:8px 16px 8px 8px}.panel h3{font-size:28px}}
+
+/* ===== NTC ===== */
+.ntc{background:var(--forest);color:#fff;overflow:hidden}
+.ntc .stars{position:absolute;inset:0;pointer-events:none}
+.ntc .stars i{position:absolute;width:4px;height:4px;border-radius:50%;background:#fff;animation:twinkle 3s ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:.2;transform:scale(.6)}50%{opacity:1;transform:scale(1)}}
+.ntc-top{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center;margin-bottom:80px;position:relative}
+.ntc-top p{color:rgba(255,255,255,.8);font-size:20px;margin-bottom:16px}
+.ntc-top p b{color:#fff}
+.ntc-photos{position:relative;height:440px}
+.ntc-photos figure{position:absolute;margin:0;border-radius:var(--r-md);overflow:hidden;border:8px solid #fff;box-shadow:0 24px 48px -16px rgba(0,0,0,.5)}
+.ntc-photos img{width:100%;height:100%;object-fit:cover}
+.ntc-photos .p1{left:0;top:0;width:60%;height:84%;transform:rotate(-4deg)}
+.ntc-photos .p2{right:0;bottom:0;width:52%;height:64%;transform:rotate(5deg)}
+.lic{display:inline-flex;align-items:center;gap:16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:var(--r-sm);padding:16px 20px;margin-top:16px}
+.lic svg{width:40px;height:40px;color:var(--gold);flex:none}
+.lic b{display:block;font-family:'Baloo 2';font-size:20px}
+.lic span{font-size:12px;color:rgba(255,255,255,.72);font-weight:700}
+.phases{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative}
+.phase{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--r-md);padding:32px;position:relative;overflow:hidden}
+.phase .n{font-family:'Baloo 2';font-weight:700;font-size:96px;line-height:.8;color:var(--gold);opacity:.9;margin-bottom:24px;display:block}
+.phase h3{font-size:24px;margin-bottom:12px}
+.phase p{color:rgba(255,255,255,.76)}
+.phase .doodle{position:absolute;right:20px;top:24px;width:96px;height:96px;color:rgba(255,255,255,.5)}
+.phase .doodle path,.phase .doodle circle,.phase .doodle rect{fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+html.js .phase .doodle *{stroke-dasharray:400;stroke-dashoffset:400;transition:stroke-dashoffset 1.8s ease}
+html.js .phase.in .doodle *{stroke-dashoffset:0}
+.ntc-note{margin-top:32px;font-size:16px;color:rgba(255,255,255,.64);text-align:center}
+@media (max-width:991px){.ntc-top{grid-template-columns:1fr;gap:56px}.phases{grid-template-columns:1fr}.ntc-photos{height:360px}}
+
+/* ===== JEDAN DAN ===== */
+.day{background:linear-gradient(180deg,#e7f4fb 0%,#fff8e4 55%,#fde8d7 100%);overflow:hidden}
+.day-wrap{position:relative;max-width:1040px;margin:0 auto}
+.day-path{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.day-path .base{fill:none;stroke:rgba(42,33,25,.24);stroke-width:3;stroke-dasharray:2 12;stroke-linecap:round}
+.day-path .done{fill:none;stroke:var(--gold);stroke-width:4;stroke-linecap:round;filter:drop-shadow(0 0 6px rgba(255,210,94,.9))}
+.day-fairy{position:absolute;left:0;top:0;width:0;height:0;z-index:3;pointer-events:none}
+.day-fairy .core{position:absolute;left:-8px;top:-8px;width:16px;height:16px;border-radius:50%;background:#fff;box-shadow:0 0 8px 4px #fff3c4,0 0 24px 12px rgba(255,210,94,.85),0 0 64px 32px rgba(255,210,94,.3)}
+.day-fairy .wing{position:absolute;top:-20px;width:20px;height:28px;border-radius:50%;background:radial-gradient(circle at 50% 30%,#fff,rgba(214,240,255,.55));border:1px solid #fff;animation:flap .1s ease-in-out infinite alternate}
+.day-fairy .wing.l{left:-20px;transform-origin:100% 80%;rotate:-24deg}
+.day-fairy .wing.r{left:0;transform-origin:0 80%;rotate:24deg}
+.stops{list-style:none;position:relative;display:grid;gap:40px}
+.stop{display:grid;grid-template-columns:1fr 64px 1fr;align-items:center;gap:24px}
+.stop .dot{width:64px;height:64px;border-radius:50%;background:#fff;border:3px solid var(--ink);display:grid;place-items:center;position:relative;z-index:2;transition:background .4s,transform .4s cubic-bezier(.3,1.6,.5,1),box-shadow .4s}
+.stop .dot svg{width:28px;height:28px}
+.stop.lit .dot{background:var(--gold);transform:scale(1.12);box-shadow:0 0 0 8px rgba(255,210,94,.32)}
+.stop .card{background:#fff;border-radius:var(--r-md);padding:24px 28px;box-shadow:0 16px 32px -20px rgba(42,33,25,.4);border:2px solid transparent;transition:border-color .4s,transform .5s cubic-bezier(.3,1.4,.5,1),opacity .5s}
+html.js .stop:not(.lit) .card{opacity:.56;transform:scale(.96)}
+.stop.lit .card{border-color:var(--ink)}
+.stop .time{display:inline-block;font-family:'Baloo 2';font-weight:600;font-size:16px;background:var(--ink);color:#fff;border-radius:999px;padding:4px 12px;margin-bottom:8px}
+.stop h3{font-size:24px;margin-bottom:4px}
+.stop p{color:var(--muted);font-size:16px}
+.stop:nth-child(odd) .card{grid-column:1;text-align:right}
+.stop:nth-child(odd) .dot{grid-column:2;grid-row:1}
+.stop:nth-child(even) .dot{grid-column:2}
+.stop:nth-child(even) .card{grid-column:3}
+.stop>*{grid-row:1}
+.stop:nth-child(odd) .side{grid-column:3}
+.stop:nth-child(even) .side{grid-column:1;text-align:right}
+.side small{font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.meals{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.stop:nth-child(odd) .meals{justify-content:flex-end}
+.meals span{font-size:12px;font-weight:800;background:var(--cream);border-radius:999px;padding:4px 12px}
+@media (max-width:768px){
+  .stop{grid-template-columns:64px 1fr;gap:16px}
+  .stop .dot,.stop:nth-child(odd) .dot,.stop:nth-child(even) .dot{grid-column:1;grid-row:1;width:56px;height:56px}
+  .stop .card,.stop:nth-child(odd) .card,.stop:nth-child(even) .card{grid-column:2;grid-row:1;text-align:left;padding:20px}
+  .stop .side{display:none}
+  .stop:nth-child(odd) .meals{justify-content:flex-start}
+  .stops{gap:24px}
+}
+
+/* ===== KUHINJA ===== */
+.kitchen-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-bottom:96px}
+.food-collage{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:88px;gap:12px}
+.food-collage figure{margin:0;border-radius:var(--r-sm);overflow:hidden}
+.food-collage img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.food-collage figure:hover img{transform:scale(1.06)}
+.fc1{grid-column:1/5;grid-row:1/5}
+.fc2{grid-column:5/7;grid-row:1/3}
+.fc3{grid-column:5/7;grid-row:3/5}
+.fc4{grid-column:1/3;grid-row:5/7}
+.fc5{grid-column:3/7;grid-row:5/7}
+.k-points{list-style:none;display:grid;gap:16px;margin:32px 0}
+.k-points li{display:grid;grid-template-columns:40px 1fr;gap:16px;align-items:start}
+.k-points .ico{width:40px;height:40px;border-radius:12px;background:var(--red-soft);color:var(--red-d);display:grid;place-items:center}
+.k-points .ico svg{width:20px;height:20px}
+.k-points b{display:block;font-family:'Baloo 2';font-weight:600;font-size:20px;line-height:1.2;margin-bottom:4px}
+.k-points span{color:var(--muted)}
+.nutri{display:flex;gap:16px;align-items:center;background:var(--green-soft);border-radius:var(--r-md);padding:20px 24px}
+.nutri .av{width:56px;height:56px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;flex:none}
+.nutri .av svg{width:28px;height:28px}
+.nutri b{display:block;font-family:'Baloo 2';font-size:20px;font-weight:600}
+.nutri span{font-size:16px;color:var(--muted)}
+
+.menu{background:#fff;border:2px solid var(--ink);border-radius:var(--r-lg);overflow:hidden;box-shadow:0 8px 0 var(--ink)}
+.menu-head{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;background:var(--green-d);color:#fff;padding:24px 32px}
+.menu-head h3{color:#fff;font-size:28px}
+.menu-head p{font-size:16px;color:rgba(255,255,255,.84)}
+.days{display:flex;gap:8px;flex-wrap:wrap}
+.daybtn{min-width:64px;padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.14);color:#fff;font-family:'Baloo 2';font-weight:600;font-size:16px;line-height:1.2;text-align:center;transition:background .2s,color .2s}
+.daybtn small{display:block;font-family:'Nunito';font-size:12px;font-weight:700;opacity:.8}
+.daybtn[aria-pressed=true]{background:var(--gold);color:var(--ink)}
+.meal-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.meal{padding:32px;border-right:2px dashed var(--line);min-height:220px}
+.meal:last-child{border-right:0}
+.meal .t{font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--red-d);margin-bottom:4px}
+.meal h4{font-size:24px;margin-bottom:12px}
+.meal ul{list-style:none;display:grid;gap:4px}
+.meal li{font-weight:600}
+.meal li::before{content:"•";color:var(--green);margin-right:8px}
+html.js .meal.swap ul{animation:pop .45s cubic-bezier(.3,1.4,.5,1)}
+.menu-foot{display:grid;grid-template-columns:repeat(7,1fr);background:var(--cream-soft);border-top:2px solid var(--ink)}
+.menu-foot div{padding:16px 20px;border-right:1px solid var(--line)}
+.menu-foot div:last-child{border-right:0}
+.menu-foot b{display:block;font-family:'Baloo 2';font-size:24px;line-height:1.2}
+.menu-foot span{font-size:12px;font-weight:700;color:var(--muted)}
+.menu-note{padding:16px 32px;font-size:16px;color:var(--muted);border-top:1px solid var(--line)}
+@media (max-width:991px){.kitchen-grid{grid-template-columns:1fr;gap:56px}.meal-grid{grid-template-columns:repeat(2,1fr)}.meal:nth-child(2){border-right:0}.meal:nth-child(-n+2){border-bottom:2px dashed var(--line)}.menu-foot{grid-template-columns:repeat(4,1fr)}.menu-foot div{border-bottom:1px solid var(--line)}}
+@media (max-width:600px){.meal-grid{grid-template-columns:1fr}.meal{border-right:0;border-bottom:2px dashed var(--line);min-height:0;padding:24px}.meal:last-child{border-bottom:0}.menu-foot{grid-template-columns:repeat(2,1fr)}.menu-head{padding:20px}.daybtn{min-width:0;padding:8px 12px}.food-collage{grid-auto-rows:56px}}
+
+/* ===== OBJEKTI ===== */
+.places{background:var(--green-soft)}
+.place-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:56px}
+.place{background:#fff;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.place .ph{aspect-ratio:16/9;overflow:hidden;position:relative}
+.place .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.place:hover .ph img{transform:scale(1.04)}
+.place .num{position:absolute;left:20px;top:20px;background:var(--red);color:#fff;font-family:'Baloo 2';font-weight:600;font-size:16px;border-radius:999px;padding:8px 16px;box-shadow:0 4px 0 var(--red-d)}
+.place .tx{padding:32px}
+.place h3{font-size:28px;margin-bottom:8px}
+.place .addr{display:flex;align-items:center;gap:8px;font-weight:800;color:var(--green-d);margin-bottom:12px}
+.place .addr svg{width:20px;height:20px}
+.place p{color:var(--muted)}
+.strip{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:16px;scrollbar-width:thin}
+.strip figure{flex:0 0 320px;margin:0;scroll-snap-align:start;border-radius:var(--r-md);overflow:hidden;background:#fff;position:relative}
+.strip img{width:100%;height:240px;object-fit:cover}
+.strip figcaption{position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,.94);border-radius:999px;padding:4px 12px;font-weight:800;font-size:12px}
+.strip-ctrl{display:flex;gap:12px;justify-content:flex-end;margin-bottom:16px}
+.round{width:48px;height:48px;border-radius:50%;border:2px solid var(--ink);background:#fff;display:grid;place-items:center;box-shadow:0 4px 0 var(--ink);transition:transform .2s}
+.round:hover{transform:translateY(-2px)}
+.round svg{width:20px;height:20px}
+@media (max-width:991px){.place-grid{grid-template-columns:1fr}}
+@media (max-width:600px){.strip figure{flex-basis:260px}.strip img{height:200px}.place .tx{padding:24px}}
+
+/* ===== TIM ===== */
+.team-lead{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:64px}
+.lead-card{text-align:center}
+.lead-card .ph{aspect-ratio:3/4;border-radius:999px 999px var(--r-md) var(--r-md);overflow:hidden;background:var(--cream);margin-bottom:16px;border:4px solid #fff;box-shadow:var(--shadow)}
+.lead-card img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;transition:transform .6s}
+.lead-card:hover img{transform:scale(1.05)}
+.lead-card h3{font-size:20px}
+.lead-card span{font-size:16px;color:var(--muted);font-weight:700}
+.rail{overflow:hidden;margin:0 -32px;padding:8px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.rail .row{display:flex;gap:16px;width:max-content;animation:tick 80s linear infinite}
+.rail.rev .row{animation-direction:reverse;animation-duration:64s}
+.rail:hover .row{animation-play-state:paused}
+.rail+.rail{margin-top:16px}
+.mate{flex:0 0 168px;background:#fff;border-radius:var(--r-sm);overflow:hidden;box-shadow:0 8px 16px -12px rgba(42,33,25,.4);transition:transform .3s}
+.mate:hover{transform:translateY(-8px) rotate(-2deg)}
+.mate img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;background:#7d79b0}
+.mate div{padding:8px 12px 12px}
+.mate b{display:block;font-family:'Baloo 2';font-weight:600;font-size:16px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mate span{display:block;font-size:12px;font-weight:700;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:991px){.team-lead{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.team-lead{gap:16px}.lead-card h3{font-size:16px}.lead-card span{font-size:12px;display:block;line-height:1.4}}
+@media (max-width:768px){.rail{margin:0 -20px}.mate{flex-basis:136px}}
+
+/* ===== AKTIVNOSTI ===== */
+.acts{background:var(--paper)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:40px}
+.filter{padding:8px 20px;border-radius:999px;border:2px solid var(--ink);font-weight:800;font-size:16px;background:#fff;transition:background .2s,color .2s}
+.filter[aria-pressed=true]{background:var(--ink);color:#fff}
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:240px;gap:16px;grid-auto-flow:dense}
+.tile{position:relative;border-radius:var(--r-md);overflow:hidden;cursor:zoom-in;background:var(--green-soft);transition:opacity .4s,transform .4s}
+.tile.w2{grid-column:span 2}.tile.h2{grid-row:span 2}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.tile:hover img{transform:scale(1.06)}
+.tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:48px 20px 16px;background:linear-gradient(transparent,rgba(29,51,23,.88));color:#fff}
+.tile figcaption b{display:block;font-family:'Baloo 2';font-weight:600;font-size:20px;line-height:1.2}
+.tile figcaption span{font-size:12px;font-weight:700;opacity:.85}
+.tile.hide{display:none}
+.tile button{position:absolute;inset:0;width:100%;height:100%;z-index:2}
+dialog.lb{border:0;padding:0;background:transparent;max-width:min(1040px,92vw);margin:auto;overflow:visible}
+dialog.lb::backdrop{background:rgba(29,51,23,.88);backdrop-filter:blur(4px)}
+dialog.lb img{max-height:76vh;width:auto;max-width:100%;border-radius:var(--r-md);margin:0 auto}
+dialog.lb .cap{color:#fff;text-align:center;margin-top:16px}
+dialog.lb .cap b{font-family:'Baloo 2';font-size:24px;display:block}
+dialog.lb .cap span{opacity:.8}
+dialog.lb .x{position:absolute;right:-8px;top:-56px;width:48px;height:48px;border-radius:50%;background:#fff;display:grid;place-items:center}
+.eu{display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center;background:#fff;border:2px solid var(--ink);border-radius:var(--r-lg);padding:24px;margin-top:40px;box-shadow:0 4px 0 var(--ink)}
+.eu img{width:240px;height:160px;object-fit:cover;border-radius:var(--r-sm)}
+.eu h3{font-size:24px;margin-bottom:8px}
+.eu p{color:var(--muted)}
+.eu .flags{display:flex;gap:4px;margin-bottom:12px}
+.eu .flags i{width:24px;height:16px;border-radius:4px;background:#2b4ea2;position:relative}
+.eu .flags i::after{content:"★";position:absolute;inset:0;color:var(--gold);font-size:12px;line-height:16px;text-align:center;font-style:normal}
+@media (max-width:991px){.bento{grid-template-columns:repeat(2,1fr);grid-auto-rows:200px}}
+@media (max-width:600px){.bento{grid-template-columns:1fr 1fr;grid-auto-rows:160px;gap:12px}.tile.w2{grid-column:span 2}.tile figcaption{padding:32px 12px 12px}.tile figcaption b{font-size:16px}.tile figcaption span{display:none}.eu{grid-template-columns:1fr}.eu img{width:100%}}
+
+/* ===== PRVI DANI ===== */
+.first{background:var(--red-soft)}
+.first-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:start}
+.first-grid>*,.about-grid>*,.kitchen-grid>*,.health-grid>*,.faq-grid>*,.enrol-grid>*,.ntc-top>*{min-width:0}
+.types{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 32px}
+.types span{background:#fff;border-radius:999px;padding:8px 16px;font-weight:800;font-size:16px;display:inline-flex;align-items:center;gap:8px}
+.types i{width:12px;height:12px;border-radius:50%}
+.deck-wrap{position:relative}
+.deck{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 4px 16px}
+.deck::-webkit-scrollbar{display:none}
+.tip{flex:0 0 100%;scroll-snap-align:start;background:#fff;border-radius:var(--r-lg);padding:40px;border:2px solid var(--ink);box-shadow:0 8px 0 var(--ink);min-height:280px;display:flex;flex-direction:column}
+.tip .no{font-family:'Baloo 2';font-weight:700;font-size:72px;line-height:1;color:var(--red);margin-bottom:16px;display:flex;align-items:baseline;gap:8px}
+.tip .no small{font-size:16px;color:var(--muted);font-weight:500}
+.tip h3{font-size:24px;margin-bottom:8px}
+.tip p{color:var(--muted);font-size:20px}
+.deck-nav{display:flex;align-items:center;gap:16px;margin-top:16px}
+.deck-dots{display:flex;gap:4px;flex:1;flex-wrap:wrap}
+.deck-dots i{width:20px;height:8px;border-radius:999px;background:rgba(42,33,25,.16);transition:background .3s,width .3s}
+.deck-dots i.on{background:var(--red);width:32px}
+.adapt-note{margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.adapt-note div{background:#fff;border-radius:var(--r-md);padding:20px 24px}
+.adapt-note b{display:block;font-family:'Baloo 2';font-weight:600;font-size:20px;margin-bottom:4px}
+.adapt-note span{color:var(--muted)}
+
+.bag{background:#fff;border-radius:var(--r-lg);padding:32px;border:2px solid var(--ink);box-shadow:0 8px 0 var(--ink);position:sticky;top:112px}
+.bag h3{font-size:28px;margin-bottom:4px}
+.bag>p{color:var(--muted);margin-bottom:20px}
+.bag-stage{display:grid;place-items:center;margin-bottom:20px;position:relative}
+.bag-svg{width:184px;height:200px;overflow:visible}
+.bag-svg.wiggle{animation:wig .5s}
+@keyframes wig{20%{transform:rotate(-6deg)}40%{transform:rotate(5deg)}60%{transform:rotate(-3deg)}80%{transform:rotate(2deg)}}
+.bag-count{position:absolute;right:8px;top:0;background:var(--red);color:#fff;font-family:'Baloo 2';font-weight:600;font-size:20px;border-radius:999px;padding:4px 16px;box-shadow:0 4px 0 var(--red-d)}
+.items{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.item{display:flex;align-items:center;gap:12px;padding:8px 12px 8px 8px;border-radius:var(--r-sm);border:2px solid var(--line);text-align:left;font-weight:700;font-size:16px;line-height:1.2;transition:border-color .2s,background .2s,opacity .3s}
+.item .ii{width:40px;height:40px;border-radius:12px;background:var(--cream);display:grid;place-items:center;flex:none}
+.item .ii svg{width:24px;height:24px}
+.item small{display:block;font-size:12px;color:var(--muted);font-weight:600}
+.item:hover{border-color:var(--ink)}
+.item[aria-pressed=true]{background:var(--green-soft);border-color:var(--green)}
+.item[aria-pressed=true] .ii{background:var(--green);color:#fff}
+.flyer{position:fixed;z-index:80;pointer-events:none;width:40px;height:40px;display:grid;place-items:center;transition:transform .7s cubic-bezier(.5,-0.4,.6,1),opacity .7s}
+.flyer svg{width:28px;height:28px}
+.bag-done{margin-top:16px;padding:12px 16px;border-radius:var(--r-sm);background:var(--cream);font-weight:800;text-align:center;display:none}
+.bag-done.on{display:block;animation:pop .5s cubic-bezier(.3,1.4,.5,1)}
+.bag-tip{font-size:16px;color:var(--muted);margin-top:16px}
+@media (max-width:991px){.first-grid{grid-template-columns:1fr}.bag{position:relative;top:0}}
+@media (max-width:600px){.tip{padding:28px 24px;min-height:0}.tip .no{font-size:56px}.items{grid-template-columns:1fr}.adapt-note{grid-template-columns:1fr}.bag{padding:24px 20px}}
+
+/* ===== ZDRAVLJE ===== */
+.health-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+.health-card{background:var(--green-d);color:#fff;border-radius:var(--r-lg);padding:40px;position:relative;overflow:hidden}
+.health-card h3{color:#fff;font-size:32px;margin-bottom:16px}
+.health-card p{color:rgba(255,255,255,.84);margin-bottom:12px}
+.health-card .shield{width:80px;height:80px;margin-bottom:24px;color:var(--gold)}
+.health-card .contact{margin-top:24px;background:rgba(255,255,255,.12);border-radius:var(--r-sm);padding:16px 20px}
+.health-card .contact b{display:block;font-family:'Baloo 2';font-size:20px}
+.acc{display:grid;gap:12px}
+.acc details{background:#fff;border:2px solid var(--ink);border-radius:var(--r-md);overflow:hidden;transition:box-shadow .2s}
+.acc details[open]{box-shadow:0 4px 0 var(--ink)}
+.acc summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:16px;padding:20px 24px;font-family:'Baloo 2';font-weight:600;font-size:20px;line-height:1.3}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary .q{flex:1}
+.acc summary .pm{width:32px;height:32px;border-radius:50%;background:var(--cream);display:grid;place-items:center;flex:none;transition:transform .3s,background .3s}
+.acc summary .pm svg{width:16px;height:16px}
+.acc details[open] summary .pm{transform:rotate(45deg);background:var(--gold)}
+.acc .body{padding:0 24px 24px;color:var(--muted)}
+.acc .body ul{padding-left:20px;display:grid;gap:8px}
+.acc .body li::marker{color:var(--red)}
+.acc .body p+p,.acc .body p+ul{margin-top:12px}
+.acc .body b{color:var(--ink)}
+@media (max-width:991px){.health-grid{grid-template-columns:1fr}}
+@media (max-width:600px){.health-card{padding:28px 24px}.acc summary{font-size:16px;padding:16px 20px}.acc .body{padding:0 20px 20px}}
+
+/* ===== RODITELJI ===== */
+.parents{background:var(--cream-soft)}
+.books{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.book{background:#fff;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.book .cov{height:168px;position:relative;display:grid;place-items:center;overflow:hidden}
+.book:nth-child(1) .cov{background:var(--green)}
+.book:nth-child(2) .cov{background:var(--red)}
+.book:nth-child(3) .cov{background:#4e9bc4}
+.book .cov svg{width:96px;height:96px;color:#fff;transition:transform .5s cubic-bezier(.3,1.6,.5,1)}
+.book:hover .cov svg{transform:scale(1.12) rotate(-6deg)}
+.book .cov small{position:absolute;left:20px;top:20px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:rgba(0,0,0,.16);border-radius:999px;padding:4px 12px}
+.book .tx{padding:28px;flex:1;display:flex;flex-direction:column}
+.book h3{font-size:24px;margin-bottom:8px}
+.book>.tx>p{color:var(--muted);margin-bottom:16px}
+.book details{margin-top:auto;border-top:2px dashed var(--line);padding-top:16px}
+.book summary{cursor:pointer;font-weight:800;color:var(--green-d);list-style:none;display:flex;align-items:center;gap:8px}
+.book summary::-webkit-details-marker{display:none}
+.book summary svg{width:16px;height:16px;transition:transform .3s}
+.book details[open] summary svg{transform:rotate(180deg)}
+.book ul{margin-top:12px;padding-left:20px;display:grid;gap:8px;color:var(--muted)}
+.book li::marker{color:var(--red)}
+.src{margin-top:32px;text-align:center;color:var(--muted);font-size:16px}
+@media (max-width:991px){.books{grid-template-columns:1fr}}
+
+/* ===== FAQ ===== */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+.faq-side{position:sticky;top:112px}
+.faq-side .peter{width:160px;height:160px;border-radius:50%;background:var(--cream);overflow:hidden;margin-top:32px;box-shadow:inset 0 0 0 4px var(--green)}
+.faq-side .peter img{width:100%;height:100%;transform:translateY(8px) scale(1.1)}
+@media (max-width:991px){.faq-grid{grid-template-columns:1fr}.faq-side{position:static}.faq-side .peter{display:none}}
+
+/* ===== UPIS ===== */
+.enrol{background:var(--forest);color:#fff;overflow:hidden}
+.enrol-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start;position:relative}
+.enrol h2{color:#fff}
+.c-list{list-style:none;display:grid;gap:16px;margin-top:32px}
+.c-list li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:center}
+.c-list .ico{width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.1);display:grid;place-items:center;color:var(--gold)}
+.c-list .ico svg{width:20px;height:20px}
+.c-list b{display:block;font-family:'Baloo 2';font-weight:600;font-size:20px;line-height:1.3}
+.c-list a{text-decoration:none}
+.c-list a:hover{color:var(--gold)}
+.c-list span{font-size:16px;color:rgba(255,255,255,.72)}
+.form{background:#fff;color:var(--ink);border-radius:var(--r-lg);padding:40px;box-shadow:0 8px 0 var(--gold)}
+.form h3{font-size:28px;margin-bottom:4px}
+.form>p{color:var(--muted);margin-bottom:24px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.f{display:flex;flex-direction:column;gap:8px}
+.f.full{grid-column:1/-1}
+.f label{font-weight:800;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.f input,.f select,.f textarea{font:inherit;font-size:16px;padding:12px 16px;border:2px solid var(--line);border-radius:var(--r-sm);background:var(--paper);color:var(--ink);transition:border-color .2s,background .2s;width:100%}
+.f input:focus,.f select:focus,.f textarea:focus{outline:0;border-color:var(--green-d);background:#fff}
+.seg{display:flex;gap:8px;flex-wrap:wrap}
+.seg label{text-transform:none;letter-spacing:0;font-size:16px;font-weight:700;border:2px solid var(--line);border-radius:999px;padding:8px 16px;cursor:pointer;transition:all .2s}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg input:checked+span{color:var(--green-dd)}
+.seg label:has(input:checked){border-color:var(--green-d);background:var(--green-soft)}
+.form .btn{width:100%;margin-top:8px}
+.form .fine{font-size:12px;color:var(--muted);margin-top:16px;text-align:center}
+.ok{display:none;text-align:center;padding:24px 0}
+.ok.on{display:block}
+.ok svg{width:72px;height:72px;color:var(--green-d);margin:0 auto 16px}
+.ok h3{margin-bottom:8px}
+@media (max-width:991px){.enrol-grid{grid-template-columns:1fr}}
+@media (max-width:600px){.form{padding:28px 20px}.frow{grid-template-columns:1fr}}
+
+/* ===== FOOTER ===== */
+footer{background:#14240f;color:rgba(255,255,255,.72);padding:80px 0 32px;font-size:16px}
+.f-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:40px;margin-bottom:56px}
+.f-logo{width:144px;margin-bottom:16px;background:var(--paper);border-radius:var(--r-md);padding:8px}
+footer h4{color:#fff;font-size:16px;margin-bottom:16px;font-family:'Nunito';font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+footer ul{list-style:none;display:grid;gap:8px}
+footer li{overflow-wrap:anywhere}
+footer li b{color:#fff;font-weight:700}
+footer a{text-decoration:none}
+footer a:hover{color:var(--gold)}
+.f-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12px}
+@media (max-width:991px){.f-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.f-grid{grid-template-columns:1fr}}
+
+/* mobile CTA bar */
+.mbar{display:none}
+@media (max-width:768px){
+  .mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:50;display:grid;grid-template-columns:1fr 1.4fr;gap:8px;transform:translateY(120%);transition:transform .4s}
+  .mbar.on{transform:none}
+  .mbar a{display:flex;align-items:center;justify-content:center;gap:8px;height:52px;border-radius:999px;font-family:'Baloo 2';font-weight:600;text-decoration:none;font-size:16px}
+  .mbar .call{background:#fff;border:2px solid var(--ink)}
+  .mbar .go{background:var(--green-d);color:#fff;box-shadow:0 4px 0 var(--green-dd)}
+  .mbar svg{width:20px;height:20px}
+  footer{padding-bottom:96px}
+}
+
+/* reveal */
+html.js .rv{opacity:0;transform:translateY(32px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+html.js .rv.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  html.js .rv{opacity:1;transform:none}
+  .fairy,.day-fairy{display:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-feather" viewBox="0 0 24 24"><path d="M20 3C12 4 6 9 5 19l-1 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M20 3c-1 6-5 11-13 13 1-6 6-11 13-13z" fill="currentColor" opacity=".9"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="currentColor"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-3 2a12 12 0 006 6l2-3 5 2v4a2 2 0 01-2 2A17 17 0 013 5a2 2 0 012-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l2.6 6.9L22 12l-7.4 3.1L12 22l-2.6-6.9L2 12l7.4-3.1z" fill="currentColor"/></symbol>
+    <symbol id="i-pot" viewBox="0 0 24 24"><path d="M4 10h16v6a4 4 0 01-4 4H8a4 4 0 01-4-4v-6zM2 10h20M9 6c0-1 1-1 1-2M14 6c0-1 1-1 1-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-5-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 9c0 6-8 11-8 11z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-apple" viewBox="0 0 24 24"><path d="M12 7c-2-2-7-1.5-7 4 0 5 3 9 5 9 1 0 1.3-.5 2-.5s1 .5 2 .5c2 0 5-4 5-9 0-5.5-5-6-7-4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 7c0-2 1-4 3-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8.5 12l2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 012-2h13v16H6a2 2 0 00-2 2zM4 5v16M8 7h7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-kite" viewBox="0 0 24 24"><path d="M14 2l7 7-7 7-7-7z M14 2v14 M7 9h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M7 16c-1 2-3 2-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><path d="M8 13V5.5a1.5 1.5 0 013 0V11M11 10V4.5a1.5 1.5 0 013 0V11M14 10.5V6a1.5 1.5 0 013 0v8a7 7 0 01-7 7h-.5A6 6 0 014 16l-1.6-3a1.5 1.5 0 012.6-1.5L8 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-cup" viewBox="0 0 24 24"><path d="M5 8h12v5a6 6 0 01-12 0zM17 9h1a3 3 0 010 6h-1M8 3v2M11 3v2M14 3v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-tree" viewBox="0 0 24 24"><path d="M12 22v-6M7 16h10l-2.5-3.5H16L12 3 8 12.5h1.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0012 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-bowl" viewBox="0 0 24 24"><path d="M3 11h18a9 9 0 01-18 0zM8 7c0-1 1-1.5 1-3M12 7c0-1 1-1.5 1-3M16 7c0-1 1-1.5 1-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 019.5 4a8 8 0 1010.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-ball" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 9.5c5 1 12 1 17 0M3.5 14.5c5-1 12-1 17 0M12 3c-3 5-3 13 0 18" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-shoe" viewBox="0 0 24 24"><path d="M3 15V8l5 1 2 3 7 1a4 4 0 014 4v1H3z M3 18h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+    <symbol id="i-shirt" viewBox="0 0 24 24"><path d="M8 3l-5 3 2 5 2-1v11h10V10l2 1 2-5-5-3c0 2-1.5 3-4 3S8 5 8 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-diaper" viewBox="0 0 24 24"><path d="M3 7h18v3a9 9 0 01-18 0z M3 10h4M17 10h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="12" cy="13" r="1.5" fill="currentColor"/></symbol>
+    <symbol id="i-pj" viewBox="0 0 24 24"><path d="M7 3h10l1 18h-5l-1-9-1 9H6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M14 6l.5 1 1 .2-.7.8.2 1-1-.5-1 .5.2-1-.7-.8 1-.2z" fill="currentColor"/></symbol>
+    <symbol id="i-bottle" viewBox="0 0 24 24"><path d="M10 2h4v3h1a2 2 0 012 2v13a2 2 0 01-2 2H9a2 2 0 01-2-2V7a2 2 0 012-2h1z M7 11h4M7 15h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+    <symbol id="i-hat" viewBox="0 0 24 24"><path d="M2 17c3 2 17 2 20 0M5 16.5C5 10 8 6 12 6s7 4 7 10.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 6c1-2 3-3 5-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="grp">
+      <span><svg><use href="#i-pin"/></svg>Ilindenska 103</span>
+      <span class="hide-md"><svg><use href="#i-pin"/></svg>Radovana Mićovića 22a</span>
+      <span class="hide-md"><svg><use href="#i-clock"/></svg>Jutarnji prijem od 6:00 do 8:00</span>
+    </div>
+    <div class="grp">
+      <a href="tel:+38134202506"><svg><use href="#i-phone"/></svg>034 202 506</a>
+      <a href="mailto:info@petar-pan.rs"><svg><use href="#i-mail"/></svg>info@petar-pan.rs</a>
+    </div>
+  </div>
+</div>
+
+<header class="site" id="hdr">
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="Petar Pan, početak stranice">
+      <span class="ic"><img src="assets/logo-icon.svg" alt=""></span>
+      <span><b>Petar Pan</b><small>Predškolska ustanova · Kragujevac</small></span>
+    </a>
+    <nav class="links" aria-label="Glavni meni">
+      <a href="#programi">Programi</a>
+      <a href="#ntc">NTC</a>
+      <a href="#dan">Jedan dan</a>
+      <a href="#kuhinja">Kuhinja</a>
+      <a href="#vrtici">Vrtići</a>
+      <a href="#tim">Tim</a>
+      <a href="#prvi-dani">Prvi dani</a>
+    </nav>
+    <a href="#upis" class="btn btn-primary">Prijavi dete<span class="arr"><svg><use href="#i-arrow"/></svg></span></a>
+    <button class="burger" id="burger" aria-label="Otvori meni" aria-expanded="false" aria-controls="mmenu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mmenu" id="mmenu" aria-label="Mobilni meni">
+  <a href="#o-nama">O nama</a>
+  <a href="#programi">Programi</a>
+  <a href="#ntc">NTC sistem učenja</a>
+  <a href="#dan">Jedan dan u vrtiću</a>
+  <a href="#kuhinja">Kuhinja i jelovnik</a>
+  <a href="#vrtici">Naši vrtići</a>
+  <a href="#tim">Tim</a>
+  <a href="#aktivnosti">Aktivnosti</a>
+  <a href="#prvi-dani">Prvi dani</a>
+  <a href="#zdravlje">Zdravlje</a>
+  <a href="#pitanja">Pitanja</a>
+  <a href="#upis" class="btn btn-primary">Prijavi dete</a>
+</nav>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="hero">
+  <svg class="clouds" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g class="cloud"><path d="M120 140c0-22 18-40 40-40 8-20 28-32 50-28 14-14 40-14 54 2 22-2 40 14 40 36 0 18-14 30-30 30H150c-16 0-30-0-30 0z" fill="#fff"/></g>
+    <g class="cloud"><path d="M1180 640c0-18 14-32 32-32 6-16 22-26 40-22 12-12 32-12 44 2 18-2 32 12 32 28 0 14-12 24-24 24h-100c-14 0-24 0-24 0z" fill="#fff"/></g>
+  </svg>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="pill"><i><svg><use href="#i-star"/></svg></i>Licencirani vrtić<span class="xs-hide">· Kragujevac</span></span>
+      <h1><span class="ln">Ovde deca rastu</span><span class="ln">i uče da <span class="lete">lete.<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M4 14C50 4 120 2 196 10"/></svg></span></span></h1>
+      <p class="lead"><span class="s">Jaslice, vrtić i pripremni predškolski program u tri vrtića.</span><span class="s">Po NTC licenci, uz našu kuhinju i nutricionistu.</span></p>
+      <div class="ctas">
+        <a href="#upis" class="btn btn-primary">Prijavi dete<span class="arr"><svg><use href="#i-arrow"/></svg></span></a>
+        <a href="#dan" class="btn btn-ghost">Pogledaj jedan dan</a>
+      </div>
+      <div class="hero-facts">
+        <div><b data-count="6">6</b><span>akreditovanih programa</span></div>
+        <div><b data-count="3">3</b><span>vrtića na dve adrese</span></div>
+        <div><b data-count="40" data-suffix="+">40+</b><span>ljudi u timu</span></div>
+      </div>
+    </div>
+
+    <div class="hero-art" id="heroArt" aria-label="Fotografije iz vrtića Petar Pan">
+      <div class="sun"></div>
+      <figure class="card c-main"><img src="assets/hero-soba.webp" alt="Deca crtaju za okruglim stolovima u šarenoj sobi sa balonima na zidu" width="1400" height="1050" fetchpriority="high"><span class="frame"></span></figure>
+      <figure class="card c-a polaroid"><span class="tape"></span><img src="assets/hero-torta.webp" alt="Proslava rođendana u bazenu u dvorištu vrtića" width="900" height="675"><figcaption>Rođendan u bazenu</figcaption></figure>
+      <figure class="card c-b polaroid"><span class="tape"></span><img src="assets/hero-kucica.webp" alt="Dečaci u zelenoj kućici za igru u dvorištu" width="678" height="900"><figcaption>Igra u dvorištu</figcaption></figure>
+      <div class="badge" aria-hidden="true">
+        <svg class="ring" viewBox="0 0 128 128"><defs><path id="circ" d="M64 64m-54 0a54 54 0 1 1 108 0a54 54 0 1 1-108 0"/></defs><text><textPath href="#circ" textLength="336" lengthAdjust="spacing">NTC SISTEM UČENJA · LICENCIRANI VRTIĆ ·</textPath></text></svg>
+        <div class="mid"><span>NTC<small>licenca</small></span></div>
+      </div>
+      <div class="chip time"><i><svg><use href="#i-clock"/></svg></i><span><b>6:00–8:00</b>jutarnji prijem</span></div>
+      <div class="chip kitchen"><i><svg><use href="#i-pot"/></svg></i><span><b>Naša kuhinja</b>sve se kuva kod nas</span></div>
+    </div>
+  </div>
+  <canvas id="dust" aria-hidden="true"></canvas>
+  <div class="fairy" id="fairy" aria-hidden="true"><i class="wing l"></i><i class="wing r"></i><b class="core"></b></div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="track">
+    <span>Šah u vrtiću</span><span>Bazen u dvorištu</span><span>Mala olimpijada</span><span>Naša mala farma</span><span>Mali pekari</span><span>Lutkarsko pozorište</span><span>Zimovanje na Zlatiboru</span><span>Aktivnosti u biobašti</span><span>Učenje engleskog</span><span>Dečija nedelja</span>
+    <span>Šah u vrtiću</span><span>Bazen u dvorištu</span><span>Mala olimpijada</span><span>Naša mala farma</span><span>Mali pekari</span><span>Lutkarsko pozorište</span><span>Zimovanje na Zlatiboru</span><span>Aktivnosti u biobašti</span><span>Učenje engleskog</span><span>Dečija nedelja</span>
+  </div>
+</div>
+
+<!-- ================= O NAMA ================= -->
+<section id="o-nama">
+  <div class="wrap about-grid">
+    <div class="rv">
+      <span class="eyebrow"><svg><use href="#i-feather"/></svg>O nama</span>
+      <p class="big-quote">Vrtić je mesto druženja i zadovoljstva, mesto gde se <em>raste, razvija, uči i voli.</em></p>
+      <div class="about-who">
+        <h3>Ko radi sa decom?</h3>
+        <p>U jaslama rade medicinske sestre-vaspitači, a sa decom od tri godine do polaska u školu vaspitači. Rad zajedno planiraju, sprovode i unapređuju sa pedagogom i direktorom.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><b data-count="6">6</b><span>akreditovanih programa</span></div>
+        <div class="stat"><b data-count="3">3</b><span>jaslene grupe</span></div>
+        <div class="stat"><b data-count="3">3</b><span>vrtića</span></div>
+        <div class="stat"><b data-count="40" data-suffix="+">40+</b><span>ljudi u timu</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="head rv" style="margin-bottom:32px">
+        <h2>Šta naš vrtić <em>nudi</em></h2>
+        <p><span class="s">Brigu o deci gradimo na kvalitetnim programima,</span><span class="s">savremenim uslovima i saradnji sa porodicom.</span></p>
+      </div>
+      <div class="offer">
+        <div class="offer-item rv"><span class="ico"><svg><use href="#i-heart"/></svg></span><div><h3>Negu deteta</h3><p>Lična higijena, potreba za snom, boravak na svežem vazduhu i čista sredina.</p></div></div>
+        <div class="offer-item rv"><span class="ico"><svg><use href="#i-apple"/></svg></span><div><h3>Pravilnu ishranu</h3><p>Obroci prilagođeni potrebama dece, iz naše kuhinje, po jelovniku nutricioniste.</p></div></div>
+        <div class="offer-item rv"><span class="ico"><svg><use href="#i-shield"/></svg></span><div><h3>Preventivno-zdravstvenu zaštitu</h3><p>Svakodnevna jutarnja trijaža i sestra na preventivi koja vodi zdravstveni karton.</p></div></div>
+        <div class="offer-item rv"><span class="ico"><svg><use href="#i-bulb"/></svg></span><div><h3>Vaspitno-obrazovni rad</h3><p>U osmišljenim i podsticajnim prostorijama, kroz igru i projekte.</p></div></div>
+        <div class="offer-item rv"><span class="ico"><svg><use href="#i-kite"/></svg></span><div><h3>Različite programe</h3><p>„Zdrav vrtić”, dramski metod, NTC program, izleti, zimovanje i letovanje.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROGRAMI ================= -->
+<section class="programs" id="programi">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow"><svg><use href="#i-feather"/></svg>Programi po uzrastu</span>
+      <h2>Program za svaki <em>uzrast</em></h2>
+      <p><span class="s">Od prvih koraka u jaslama do polaska u školu.</span><span class="s">Izaberi uzrast deteta i pogledaj šta ga čeka.</span></p>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Uzrast">
+      <button class="tab" role="tab" id="t-jas" aria-controls="p-jas" aria-selected="true">Jaslice <span class="age">do 3 god.</span></button>
+      <button class="tab" role="tab" id="t-vrt" aria-controls="p-vrt" aria-selected="false" tabindex="-1">Vrtić <span class="age">3 do 5,5 god.</span></button>
+      <button class="tab" role="tab" id="t-pre" aria-controls="p-pre" aria-selected="false" tabindex="-1">Predškolci <span class="age">pred školu</span></button>
+    </div>
+
+    <div class="panel rv" role="tabpanel" id="p-jas" aria-labelledby="t-jas">
+      <div class="ph"><img src="assets/farma-sobica.webp" alt="Devojčice se igraju u kutku sa farmom u jaslama" loading="lazy"><div class="who">Sa decom rade <b>medicinske sestre-vaspitači</b>.</div></div>
+      <div class="tx">
+        <h3>Jaslice</h3>
+        <p class="intro">Celodnevni program nege i vaspitanja, u tri jaslene grupe.</p>
+        <ul class="ticks">
+          <li><span><b>Nega i zdravlje:</b> očuvanje i unapređenje zdravlja kroz programske i preventivne aktivnosti.</span></li>
+          <li><span><b>Razvoj:</b> podsticanje fizičkog, intelektualnog i socijalno-emocionalnog rasta deteta.</span></li>
+          <li><span><b>Ritam deteta:</b> poštovanje specifičnosti uzrasta i individualnih potreba za hranom i snom.</span></li>
+          <li><span><b>Podsticajna sredina:</b> dete otkriva sebe, druge i okolinu svojim tempom.</span></li>
+          <li><span><b>Praćenje:</b> sistematsko praćenje razvoja i zdravlja, uz redovnu razmenu sa roditeljima.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="panel" role="tabpanel" id="p-vrt" aria-labelledby="t-vrt" hidden>
+      <div class="ph"><img src="assets/radionica-sto.webp" alt="Deca slikaju za okruglim stolom u sobi vrtića" loading="lazy"><div class="who">Sa decom rade <b>vaspitači</b>.</div></div>
+      <div class="tx">
+        <h3>Vrtić</h3>
+        <p class="intro">Celodnevni vaspitno-obrazovni program za decu od tri do pet i po godina.</p>
+        <ul class="ticks">
+          <li><span><b>Upoznavanje sebe:</b> telo, potrebe, osećanja i izražavanje pokretom, gestom i rečju.</span></li>
+          <li><span><b>Odnosi sa drugima:</b> pravila u grupi, prijateljstvo, saradnja i dogovaranje.</span></li>
+          <li><span><b>Svet oko nas:</b> istraživanje predmeta i pojava kroz sopstvenu aktivnost.</span></li>
+          <li><span><b>Samostalno mišljenje:</b> dete iznosi svoje ideje i sluša ideje drugih.</span></li>
+          <li><span><b>Kreativnost:</b> igra i umetnički mediji kao put do sopstvenih potencijala.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="panel" role="tabpanel" id="p-pre" aria-labelledby="t-pre" hidden>
+      <div class="ph"><img src="assets/sah.webp" alt="Predškolci igraju šah u vrtiću" loading="lazy"><div class="who">Sa decom rade <b>vaspitači</b>, uz podršku pedagoga.</div></div>
+      <div class="tx">
+        <h3>Pripremni predškolski program</h3>
+        <p class="intro">Godina pred školu, kada se gradi samostalnost i radoznalost.</p>
+        <ul class="ticks">
+          <li><span><b>Samostalnost:</b> briga o sebi, radne navike i donošenje odluka.</span></li>
+          <li><span><b>Fizički razvoj:</b> zadovoljavanje dečje potrebe za kretanjem.</span></li>
+          <li><span><b>Socio-emocionalne veštine:</b> samopouzdanje, zajednička pravila i empatija.</span></li>
+          <li><span><b>Saznajni razvoj:</b> mišljenje, govor, pamćenje i mašta kroz istraživanje.</span></li>
+          <li><span><b>Radoznalost i kreativnost:</b> poštujemo lični tempo i stil učenja svakog deteta.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="extras rv">
+      <h3>Uz to, tokom godine:</h3>
+      <div class="extra-row">
+        <span class="extra">Program „Zdrav vrtić”</span>
+        <span class="extra">Dramski metod</span>
+        <span class="extra">NTC program</span>
+        <span class="extra">Šah u vrtiću</span>
+        <span class="extra">Učenje engleskog</span>
+        <span class="extra">Izleti</span>
+        <span class="extra">Zimovanje i letovanje, 7 dana</span>
+        <span class="extra">eTwinning projekti</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NTC ================= -->
+<section class="ntc on-dark" id="ntc">
+  <div class="stars" id="stars" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="ntc-top">
+      <div class="rv">
+        <span class="eyebrow"><svg><use href="#i-star"/></svg>NTC licenca</span>
+        <div class="head" style="margin-bottom:24px">
+          <h2>Igra koja <em style="color:var(--gold)">gradi mozak</em></h2>
+        </div>
+        <p>Imamo licencu za svakodnevnu primenu <b>NTC sistema učenja</b>. Autor metodologije je <b>dr Ranko Rajović</b>, član komiteta svetske Mense za darovitu decu i saradnik UNICEF-a za rano obrazovanje.</p>
+        <p>Vaspitači NTC aktivnosti rade u saradnji sa NTC stručnim timom: uz supervizijsko praćenje, konsultacije i kontrolu kvaliteta.</p>
+        <div class="lic"><svg><use href="#i-shield"/></svg><div><b>Igra je ključ</b><span>Unutrašnja motivacija deteta pokreće ceo program</span></div></div>
+      </div>
+      <div class="ntc-photos rv">
+        <figure class="p1"><img src="assets/ntc-vezba.webp" alt="Dečak skače po školici sa brojevima" loading="lazy"></figure>
+        <figure class="p2"><img src="assets/sah-2.webp" alt="Dva dečaka igraju šah na podu" loading="lazy"></figure>
+      </div>
+    </div>
+    <div class="phases">
+      <div class="phase rv">
+        <svg class="doodle" viewBox="0 0 96 96" aria-hidden="true"><circle cx="48" cy="20" r="10"/><path d="M48 30v28M48 40l-20 8M48 40l20-12M48 58l-14 26M48 58l16 24"/><path d="M12 88c20-6 52-6 72 0"/></svg>
+        <span class="n">1</span>
+        <h3>Pokret</h3>
+        <p>Složene motoričke aktivnosti: fina motorika, dinamička akomodacija oka, rotacija, ravnoteža i kretanje.</p>
+      </div>
+      <div class="phase rv">
+        <svg class="doodle" viewBox="0 0 96 96" aria-hidden="true"><rect x="8" y="12" width="28" height="28" rx="4"/><circle cx="70" cy="26" r="14"/><path d="M22 60l14 24H8z"/><rect x="56" y="58" width="28" height="28" rx="14"/></svg>
+        <span class="n">2</span>
+        <h3>Povezivanje</h3>
+        <p>Misaone klasifikacije, misaone serijacije i asocijacije, kroz igre koje deca obožavaju.</p>
+      </div>
+      <div class="phase rv">
+        <svg class="doodle" viewBox="0 0 96 96" aria-hidden="true"><path d="M48 84V56M48 56L22 30M48 56l26-26M22 30L10 12M22 30l14-16M74 30l-12-18M74 30l14-14"/><circle cx="48" cy="84" r="4"/></svg>
+        <span class="n">3</span>
+        <h3>Mišljenje</h3>
+        <p>Rad na razvoju divergentnog i konvergentnog mišljenja i funkcionalnog znanja.</p>
+      </div>
+    </div>
+    <p class="ntc-note">Sve tri faze se sprovode kroz igru i spajaju senzo-motorni i kognitivni razvoj deteta.</p>
+  </div>
+</section>
+
+<!-- ================= JEDAN DAN ================= -->
+<section class="day" id="dan">
+  <div class="wrap">
+    <div class="head center rv">
+      <span class="eyebrow"><svg><use href="#i-sun"/></svg>Jedan dan u vrtiću</span>
+      <h2>Prati Zvončicu kroz <em>naš dan</em></h2>
+      <p><span class="s">Okvirni raspored iz vrtića Petar Pan.</span><span class="s">Skroluj i vilinski prah osvetljava svaki trenutak.</span></p>
+    </div>
+    <div class="day-wrap" id="dayWrap">
+      <svg class="day-path" id="dayPath" aria-hidden="true"><path class="base" d=""/><path class="done" d=""/></svg>
+      <div class="day-fairy" id="dayFairy" aria-hidden="true"><i class="wing l"></i><i class="wing r"></i><b class="core"></b></div>
+      <ol class="stops" id="stops">
+        <li class="stop"><div class="card"><span class="time">6:00–8:00</span><h3>Jutarnji prijem</h3><p>Dobro jutro! Deca stižu, a vaspitači ih dočekuju po imenu.</p></div><span class="dot"><svg><use href="#i-sun"/></svg></span><div class="side"><small>Dobro jutro</small></div></li>
+        <li class="stop"><div class="card"><span class="time">jutro</span><h3>Rituali</h3><p>Pozdravljanje, jutarnja gimnastika, priča i razmena utisaka: šta je novo i šta ćemo danas.</p></div><span class="dot"><svg><use href="#i-hand"/></svg></span><div class="side"><small>Zajedno u krugu</small></div></li>
+        <li class="stop"><div class="card"><span class="time">8:00–8:30</span><h3>Doručak</h3><p>Topao doručak iz naše kuhinje, po nedeljnom jelovniku.</p></div><span class="dot"><svg><use href="#i-cup"/></svg></span><div class="side"><small>Prvi obrok</small></div></li>
+        <li class="stop"><div class="card"><span class="time">pre podne</span><h3>Učenje i projekti</h3><p>Planirane situacije učenja, koje pokreću deca i vaspitači zajedno.</p></div><span class="dot"><svg><use href="#i-bulb"/></svg></span><div class="side"><small>Igra je učenje</small></div></li>
+        <li class="stop"><div class="card"><span class="time">10:00–10:45</span><h3>Užina</h3><p>Užina po grupama, najčešće sveže voće.</p><div class="meals"><span>jaslice 10:00</span><span>vaspitne grupe 10:30</span><span>predškolci 10:45</span></div></div><span class="dot"><svg><use href="#i-apple"/></svg></span><div class="side"><small>Mala pauza</small></div></li>
+        <li class="stop"><div class="card"><span class="time">svakog dana</span><h3>Napolju</h3><p>Boravak na otvorenom: dvorište, sprave, a leti i bazen.</p></div><span class="dot"><svg><use href="#i-tree"/></svg></span><div class="side"><small>Svež vazduh</small></div></li>
+        <li class="stop"><div class="card"><span class="time">13:00–14:00</span><h3>Ručak</h3><p>Kuvano jelo, hleb i salata. Deca sa alergijama dobijaju zamenu.</p></div><span class="dot"><svg><use href="#i-bowl"/></svg></span><div class="side"><small>Glavni obrok</small></div></li>
+        <li class="stop"><div class="card"><span class="time">posle ručka</span><h3>Dnevni odmor</h3><p>Odmor i nega deteta, a zatim sređivanje prostora.</p></div><span class="dot"><svg><use href="#i-moon"/></svg></span><div class="side"><small>Tišina</small></div></li>
+        <li class="stop"><div class="card"><span class="time">16:00</span><h3>Užina i igra</h3><p>Popodnevna užina, igra i dežurstva, sve dok roditelji ne stignu po decu.</p></div><span class="dot"><svg><use href="#i-ball"/></svg></span><div class="side"><small>Do viđenja</small></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ================= KUHINJA ================= -->
+<section id="kuhinja">
+  <div class="wrap">
+    <div class="kitchen-grid">
+      <div class="food-collage rv" aria-label="Fotografije iz naše kuhinje">
+        <figure class="fc1"><img src="assets/kuvarica.webp" alt="Kuvarica priprema peciva u kuhinji vrtića" loading="lazy"></figure>
+        <figure class="fc2"><img src="assets/hrana-voce.webp" alt="Voćni ražnjići" loading="lazy"></figure>
+        <figure class="fc3"><img src="assets/hrana-salata.webp" alt="Sveža salata" loading="lazy"></figure>
+        <figure class="fc4"><img src="assets/hrana-peciva.webp" alt="Domaća peciva" loading="lazy"></figure>
+        <figure class="fc5"><img src="assets/dorucak-dvoriste.webp" alt="Deca doručkuju za dugim stolom na terasi" loading="lazy"></figure>
+      </div>
+      <div class="rv">
+        <span class="eyebrow"><svg><use href="#i-pot"/></svg>Zelena kuhinjica</span>
+        <div class="head" style="margin-bottom:0">
+          <h2>Sve što dete pojede, <em>skuvano je kod nas</em></h2>
+          <p><span class="s">Imamo svoju kuhinju, u kojoj kuvamo za našu decu.</span><span class="s">Iz nje stižu obroci i za decu iz drugih vrtića.</span></p>
+        </div>
+        <ul class="k-points">
+          <li><span class="ico"><svg><use href="#i-pot"/></svg></span><div><b>Domaće, uključujući testa i peciva</b><span>Sve obroke prave profesionalne i iskusne kuvarice.</span></div></li>
+          <li><span class="ico"><svg><use href="#i-heart"/></svg></span><div><b>Bez viršli i kupovnih pašteta</b><span>Pileća prsa, suvi vrat, suvo meso i domaća pašteta.</span></div></li>
+          <li><span class="ico"><svg><use href="#i-shield"/></svg></span><div><b>Alergije i intolerancije</b><span>Ishrana se prilagođava svakog dana, uz odgovarajuću zamenu.</span></div></li>
+        </ul>
+        <div class="nutri"><span class="av"><svg><use href="#i-apple"/></svg></span><div><b>Jelovnik je pod lupom stručnjaka</b><span>Kreira ga i balansira nutricionista dijetetičar Sandra Karanović Ugarčina.</span></div></div>
+      </div>
+    </div>
+
+    <div class="menu rv" id="jelovnik">
+      <div class="menu-head">
+        <div><h3>Jelovnik ove nedelje</h3><p>Period od 12.10. do 16.10.2026. Menja se svake nedelje.</p></div>
+        <div class="days" id="days" role="group" aria-label="Dan u nedelji"></div>
+      </div>
+      <div class="meal-grid" id="meals" aria-live="polite"></div>
+      <div class="menu-foot">
+        <div><b>4922</b><span>kJ dnevno</span></div>
+        <div><b>41,5 g</b><span>belančevine</span></div>
+        <div><b>42,7 g</b><span>masti</span></div>
+        <div><b>212,1 g</b><span>ugljeni hidrati</span></div>
+        <div><b>870,2 mg</b><span>kalcijum</span></div>
+        <div><b>7,4 mg</b><span>gvožđe</span></div>
+        <div><b>118,2 mg</b><span>vitamin C</span></div>
+      </div>
+      <p class="menu-note">Za jaslice deca dobijaju adekvatnu zamenu i pasiranu hranu. Alergična deca takođe.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VRTICI ================= -->
+<section class="places" id="vrtici">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow"><svg><use href="#i-pin"/></svg>Naši vrtići</span>
+      <h2>Tri vrtića, <em>dve adrese</em></h2>
+      <p><span class="s">Posle uspeha prvog i drugog vrtića, otvorili smo i treći.</span><span class="s">Tako više mališana raste bezbedno i u lepom prostoru.</span></p>
+    </div>
+    <div class="place-grid">
+      <article class="place rv">
+        <div class="ph"><img src="assets/pp12-dvoriste.webp" alt="Zgrada vrtića Petar Pan u Ilindenskoj sa decom u dvorištu" loading="lazy"><span class="num">Petar Pan 1 i 2</span></div>
+        <div class="tx">
+          <h3>Ilindenska 103</h3>
+          <div class="addr"><svg><use href="#i-pin"/></svg>34000 Kragujevac</div>
+          <p>Dva vrtića pod istim krovom: šarene sobe, terasa za igru u pesku i dvorište sa spravama, gde se leti postavlja i veliki bazen.</p>
+        </div>
+      </article>
+      <article class="place rv">
+        <div class="ph"><img src="assets/pp3-dvoriste.webp" alt="Bela zgrada vrtića Petar Pan 3 sa velikim travnatim dvorištem" loading="lazy"><span class="num">Petar Pan 3</span></div>
+        <div class="tx">
+          <h3>Radovana Mićovića 22a</h3>
+          <div class="addr"><svg><use href="#i-pin"/></svg>34000 Kragujevac</div>
+          <p>Najnoviji vrtić, sa predivno velikim dvorištem i mnogo sprava i opreme za igru. Mališani uživaju uz stručan nadzor vaspitača.</p>
+        </div>
+      </article>
+    </div>
+    <div class="strip-ctrl"><button class="round" data-strip="-1" aria-label="Prethodne fotografije"><svg><use href="#i-left"/></svg></button><button class="round" data-strip="1" aria-label="Sledeće fotografije"><svg><use href="#i-arrow"/></svg></button></div>
+    <div class="strip" id="strip">
+      <figure><img src="assets/soba-ormarici.webp" alt="Dečje kupatilo sa šarenim pločicama i malim lavaboima" loading="lazy"><figcaption>Dečje kupatilo</figcaption></figure>
+      <figure><img src="assets/soba-stolovi.webp" alt="Svetla soba sa stolovima i igračkama" loading="lazy"><figcaption>Soba za rad</figcaption></figure>
+      <figure><img src="assets/kupatilo.webp" alt="Police sa igračkama u sobi vrtića" loading="lazy"><figcaption>Igračke</figcaption></figure>
+      <figure><img src="assets/soba-crvena.webp" alt="Garderoba sa šarenim ormarićima" loading="lazy"><figcaption>Garderoba</figcaption></figure>
+      <figure><img src="assets/pp3-sprave.webp" alt="Drvene sprave za penjanje u dvorištu" loading="lazy"><figcaption>Sprave u dvorištu</figcaption></figure>
+      <figure><img src="assets/pp3-ljuljaske.webp" alt="Ljuljaške i tobogan na travnjaku" loading="lazy"><figcaption>Ljuljaške</figcaption></figure>
+      <figure><img src="assets/bazen-vaspitacica.webp" alt="Vaspitačica sa decom u bazenu u dvorištu" loading="lazy"><figcaption>Bazen leti</figcaption></figure>
+      <figure><img src="assets/pp12-ispred.webp" alt="Tim vrtića ispred zgrade Petar Pan" loading="lazy"><figcaption>Ilindenska 103</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TIM ================= -->
+<section id="tim">
+  <div class="wrap">
+    <div class="head center rv">
+      <span class="eyebrow"><svg><use href="#i-heart"/></svg>Naš tim</span>
+      <h2>Ljudi u <em>šarenim keceljama</em></h2>
+      <p><span class="s">Vaspitači, medicinske sestre, pedagog, kuhinja i tehničko osoblje.</span><span class="s">Svako lice koje tvoje dete sreće u vrtiću.</span></p>
+    </div>
+    <div class="team-lead">
+      <div class="lead-card rv"><div class="ph"><img src="assets/tim/milan-joksimovic.webp" alt="Milan Joksimović" loading="lazy"></div><h3>Milan Joksimović</h3><span>Vlasnik</span></div>
+      <div class="lead-card rv"><div class="ph"><img src="assets/tim/slavica-otovic.webp" alt="Slavica Otović" loading="lazy"></div><h3>Slavica Otović</h3><span>Direktor</span></div>
+      <div class="lead-card rv"><div class="ph"><img src="assets/tim/zorica-simic.webp" alt="Zorica Simić" loading="lazy"></div><h3>Zorica Simić</h3><span>Stručni saradnik, pedagog</span></div>
+      <div class="lead-card rv"><div class="ph"><img src="assets/tim/jelena-bogdanovic.webp" alt="Jelena Bogdanović" loading="lazy"></div><h3>Jelena Bogdanović</h3><span>Administrativni službenik</span></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="rail" id="rail1"><div class="row"></div></div>
+    <div class="rail rev" id="rail2"><div class="row"></div></div>
+  </div>
+</section>
+
+<!-- ================= AKTIVNOSTI ================= -->
+<section class="acts" id="aktivnosti">
+  <div class="wrap">
+    <div class="head center rv">
+      <span class="eyebrow"><svg><use href="#i-star"/></svg>Aktivnosti</span>
+      <h2>Godina puna <em>dogodovština</em></h2>
+      <p><span class="s">Izleti, predstave, sport, farma i bazen.</span><span class="s">Klikni na fotografiju da je pogledaš u punoj veličini.</span></p>
+    </div>
+    <div class="filters" role="group" aria-label="Filter aktivnosti">
+      <button class="filter" data-f="sve" aria-pressed="true">Sve</button>
+      <button class="filter" data-f="napolju" aria-pressed="false">Napolju</button>
+      <button class="filter" data-f="kreativno" aria-pressed="false">Kreativno</button>
+      <button class="filter" data-f="leto" aria-pressed="false">Leto</button>
+      <button class="filter" data-f="izleti" aria-pressed="false">Izleti</button>
+    </div>
+    <div class="bento" id="bento">
+      <figure class="tile w2 h2" data-c="napolju"><img src="assets/mala-olimpijada.webp" alt="Deca i vaspitači sa podignutim rukama na stadionu" loading="lazy"><figcaption><b>Mala olimpijada</b><span>Stadion „Čika Dača”, sa školicom sporta „Foka” i trenerima FK Radnički</span></figcaption><button aria-label="Uvećaj: Mala olimpijada"></button></figure>
+      <figure class="tile h2" data-c="leto"><img src="assets/bazen-dvoriste.webp" alt="Dečak se smeje u bazenu" loading="lazy"><figcaption><b>Sezona kupanja</b><span>Veliki bazen u našem dvorištu</span></figcaption><button aria-label="Uvećaj: Sezona kupanja"></button></figure>
+      <figure class="tile" data-c="kreativno"><img src="assets/mali-pekari.webp" alt="Deca u kuvarskim kapama mese testo" loading="lazy"><figcaption><b>Mali pekari</b><span>Mesimo kao prave kuvarice</span></figcaption><button aria-label="Uvećaj: Mali pekari"></button></figure>
+      <figure class="tile" data-c="izleti"><img src="assets/zlatibor-sneg.webp" alt="Deca u snegu na Zlatiboru" loading="lazy"><figcaption><b>Zlatibor, sneg i mi</b><span>Zimovanje starijih grupa</span></figcaption><button aria-label="Uvećaj: Zlatibor, sneg i mi"></button></figure>
+      <figure class="tile w2" data-c="kreativno"><img src="assets/eko-predstava.webp" alt="Deca na pozornici tokom ekološke predstave" loading="lazy"><figcaption><b>Festival ekoloških predstava</b><span>„Crveno, Pozor(ište), Zeleno”</span></figcaption><button aria-label="Uvećaj: Festival ekoloških predstava"></button></figure>
+      <figure class="tile h2" data-c="napolju"><img src="assets/farma-konj.webp" alt="Deca maze belog konja" loading="lazy"><figcaption><b>Naša mala farma</b><span>Projekat „Deda Miletova farma”</span></figcaption><button aria-label="Uvećaj: Naša mala farma"></button></figure>
+      <figure class="tile" data-c="izleti"><img src="assets/zezelj.webp" alt="Deca u jesenjoj šumi" loading="lazy"><figcaption><b>Jesen na Žeželju</b><span>Šuma umesto asfalta</span></figcaption><button aria-label="Uvećaj: Jesen na Žeželju"></button></figure>
+      <figure class="tile" data-c="kreativno"><img src="assets/sah-2.webp" alt="Dečaci igraju šah" loading="lazy"><figcaption><b>Šah u vrtiću</b><span>Strpljenje i logika</span></figcaption><button aria-label="Uvećaj: Šah u vrtiću"></button></figure>
+      <figure class="tile w2" data-c="izleti"><img src="assets/izlet-jesen.webp" alt="Grupa dece na izletu ispred spomenika" loading="lazy"><figcaption><b>Jedan divan dan van vrtića</b><span>Izleti za mlađe i starije grupe</span></figcaption><button aria-label="Uvećaj: Jedan divan dan van vrtića"></button></figure>
+      <figure class="tile" data-c="napolju"><img src="assets/poligon.webp" alt="Devojčica na poligonu u dvorištu" loading="lazy"><figcaption><b>Poligon u dvorištu</b><span>Skakanje u džaku i lastiš</span></figcaption><button aria-label="Uvećaj: Poligon u dvorištu"></button></figure>
+      <figure class="tile" data-c="kreativno"><img src="assets/bojenje.webp" alt="Deca sa velikim plavim crtežom" loading="lazy"><figcaption><b>Svi smo isti</b><span>Svetski dan osoba sa autizmom</span></figcaption><button aria-label="Uvećaj: Svi smo isti"></button></figure>
+      <figure class="tile w2" data-c="leto"><img src="assets/bazen-prsluk.webp" alt="Dečak u narandžastom prsluku u bazenu" loading="lazy"><figcaption><b>Najmlađi u bazenu</b><span>Uz prsluke i stalni nadzor</span></figcaption><button aria-label="Uvećaj: Najmlađi u bazenu"></button></figure>
+      <figure class="tile w2" data-c="izleti"><img src="assets/sankanje.webp" alt="Vaspitač sa decom na sankama" loading="lazy"><figcaption><b>Sankanje</b><span>Zimovanje traje 7 dana</span></figcaption><button aria-label="Uvećaj: Sankanje"></button></figure>
+      <figure class="tile w2" data-c="napolju"><img src="assets/izlet-decaci.webp" alt="Dečaci čuče u prirodi" loading="lazy"><figcaption><b>Boravak u prirodi</b><span>Istražujemo napolju</span></figcaption><button aria-label="Uvećaj: Boravak u prirodi"></button></figure>
+    </div>
+    <div class="eu rv">
+      <img src="assets/etwinning.webp" alt="Deca sa podignutim rukama ispod murala sa avionom" loading="lazy">
+      <div>
+        <div class="flags" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <h3>Building Blocks for Life</h3>
+        <p>Naš međunarodni eTwinning projekat, u saradnji sa partnerima iz šest evropskih zemalja.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<dialog class="lb" id="lb" aria-label="Uvećana fotografija">
+  <button class="x" id="lbX" aria-label="Zatvori"><svg width="20" height="20"><use href="#i-plus" transform="rotate(45 10 10) translate(-2 -2)"/></svg></button>
+  <img id="lbImg" src="" alt="">
+  <div class="cap"><b id="lbT"></b><span id="lbS"></span></div>
+</dialog>
+
+<!-- ================= PRVI DANI ================= -->
+<section class="first" id="prvi-dani">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow"><svg><use href="#i-heart"/></svg>Prvi dani u vrtiću</span>
+      <h2>Adaptacija bez <em>suza</em> (ili bar sa manje)</h2>
+      <p><span class="s">Period adaptacije traje od nekoliko dana do dva meseca.</span><span class="s">Ovo su naši saveti, a ranac možeš da spakuješ odmah.</span></p>
+    </div>
+    <div class="first-grid">
+      <div class="rv">
+        <div class="types"><span><i style="background:var(--green)"></i>Laka</span><span><i style="background:var(--gold)"></i>Srednje teška</span><span><i style="background:var(--red)"></i>Teška adaptacija</span></div>
+        <div class="deck-wrap">
+          <div class="deck" id="deck" tabindex="0" aria-label="Saveti za adaptaciju"></div>
+          <div class="deck-nav">
+            <button class="round" id="dPrev" aria-label="Prethodni savet"><svg><use href="#i-left"/></svg></button>
+            <div class="deck-dots" id="dDots"></div>
+            <button class="round" id="dNext" aria-label="Sledeći savet"><svg><use href="#i-arrow"/></svg></button>
+          </div>
+        </div>
+        <div class="adapt-note">
+          <div><b>Šta je normalno?</b><span>Promene apetita, plač pri rastanku ili povlačenje u sebe. Prvo se vraća apetit, pa san, pa emocionalna ravnoteža.</span></div>
+          <div><b>Kome da se obratiš?</b><span>Vaspitačima i medicinskim sestrama tvoje grupe, a po potrebi i pedagogu Zorici Simić.</span></div>
+        </div>
+      </div>
+
+      <aside class="bag rv" aria-labelledby="bagT">
+        <h3 id="bagT">Spakuj ranac</h3>
+        <p>Šta je potrebno detetu za vrtić? Klikni na stvar da je spakuješ.</p>
+        <div class="bag-stage">
+          <svg class="bag-svg" id="bagSvg" viewBox="0 0 184 200" aria-hidden="true">
+            <path d="M64 40c0-20 12-32 28-32s28 12 28 32" fill="none" stroke="#2a2119" stroke-width="6" stroke-linecap="round"/>
+            <rect x="24" y="36" width="136" height="156" rx="40" fill="#76a440" stroke="#2a2119" stroke-width="4"/>
+            <path d="M24 92h136" stroke="#2a2119" stroke-width="4"/>
+            <rect x="52" y="116" width="80" height="56" rx="16" fill="#4a7a22" stroke="#2a2119" stroke-width="4"/>
+            <path d="M52 136h80" stroke="#2a2119" stroke-width="3" stroke-dasharray="6 6"/>
+            <circle cx="92" cy="92" r="8" fill="#ffd25e" stroke="#2a2119" stroke-width="3"/>
+            <text x="92" y="74" text-anchor="middle" font-family="Baloo 2" font-weight="600" font-size="16" fill="#fff">MOJ RANAC</text>
+          </svg>
+          <span class="bag-count" id="bagCount">0/6</span>
+        </div>
+        <div class="items" id="items">
+          <button class="item" aria-pressed="false"><span class="ii"><svg><use href="#i-shoe"/></svg></span><span>Papuče<small>samo za vrtić</small></span></button>
+          <button class="item" aria-pressed="false"><span class="ii"><svg><use href="#i-shirt"/></svg></span><span>Presvlaka<small>bar jedna, u obeleženom rancu</small></span></button>
+          <button class="item" aria-pressed="false"><span class="ii"><svg><use href="#i-diaper"/></svg></span><span>Pelene i krema<small>za decu u jaslicama</small></span></button>
+          <button class="item" aria-pressed="false"><span class="ii"><svg><use href="#i-pj"/></svg></span><span>Pidžama<small>po izboru, nije obavezna</small></span></button>
+          <button class="item" aria-pressed="false"><span class="ii"><svg><use href="#i-bottle"/></svg></span><span>Flašica, duda, igračka<small>obeležene, u jaslicama</small></span></button>
+          <button class="item" aria-pressed="false"><span class="ii"><svg><use href="#i-hat"/></svg></span><span>Šešir ili kapa<small>leti, zbog sunca</small></span></button>
+        </div>
+        <div class="bag-done" id="bagDone" role="status">Ranac je spreman za prvi dan!</div>
+        <p class="bag-tip">Decu oblačite slojevito, da bi vaspitači mogli da ih raskomote tokom dana.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ZDRAVLJE ================= -->
+<section id="zdravlje">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow"><svg><use href="#i-shield"/></svg>Zdravlje i bezbednost</span>
+      <h2>Zdrava sredina <em>za svu decu</em></h2>
+      <p><span class="s">Šta je potrebno pri upisu i kada dete ostaje kod kuće.</span><span class="s">Pravila koja čuvaju svako dete u grupi.</span></p>
+    </div>
+    <div class="health-grid">
+      <div class="health-card rv">
+        <svg class="shield"><use href="#i-shield"/></svg>
+        <h3>U kolektiv dolazi samo zdravo dete</h3>
+        <p>Svakog jutra radi se dnevna trijaža, da bi se pratilo zdravstveno stanje dece i sprečilo širenje zaraznih bolesti.</p>
+        <p>Dete može da boravi u kolektivu samo potpuno zdravo i uredno vakcinisano.</p>
+        <div class="contact"><b>Jana Radić</b>Sestra na preventivi, kod koje otvarate zdravstveni karton</div>
+      </div>
+      <div class="acc">
+        <details class="rv" open>
+          <summary><span class="q">Šta je potrebno prvog dana?</span><span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+          <div class="body">
+            <ul>
+              <li><b>Potvrda izabranog pedijatra</b> o zdravstvenom stanju deteta i redovnoj vakcinaciji.</li>
+              <li><b>Zdravstvena knjižica deteta.</b></li>
+              <li>Otvara se <b>zdravstveni karton</b>: dijagnoze, terapije, alergije na hranu, reakcije na ubode insekata i sklonost infekcijama.</li>
+              <li>Ako dete ima dijagnostikovan zdravstveni problem, potrebna je <b>izjava pedijatra</b> sa preporučenim merama.</li>
+            </ul>
+          </div>
+        </details>
+        <details class="rv">
+          <summary><span class="q">Kada dete ostaje kod kuće?</span><span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+          <div class="body">
+            <ul>
+              <li>Ako je imalo temperaturu tokom noći, čak i kada je ujutru spala.</li>
+              <li>Kod infekcije sluzokože usta ili očiju (konjunktivitis).</li>
+              <li>Kod dijareje ili povraćanja.</li>
+              <li>Kod bolova u grlu, stomaku, uhu ili nadražajnog kašlja: prvo kod pedijatra.</li>
+              <li>Deca pod terapijom antibioticima ne mogu u vrtić.</li>
+              <li>Kod vaški, dete se vraća nakon potpunog čišćenja kose.</li>
+            </ul>
+          </div>
+        </details>
+        <details class="rv">
+          <summary><span class="q">Kada je potrebno lekarsko opravdanje?</span><span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+          <div class="body">
+            <ul>
+              <li>Posle odsustva zbog bolesti: potvrda pedijatra da je dete zdravo za vrtić.</li>
+              <li>Posle izostanka od <b>sedam i više kalendarskih dana</b>, iz bilo kog razloga.</li>
+              <li>Posle promene zdravstvenog stanja tokom boravka u vrtiću.</li>
+            </ul>
+            <p>Ako se dete razboli tokom dana, javljamo se roditeljima da ga odvedu kod lekara.</p>
+          </div>
+        </details>
+        <details class="rv">
+          <summary><span class="q">Da li vaspitači daju lekove?</span><span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+          <div class="body"><p>Ne. Vaspitači u vrtiću ne smeju davati lekove, čak ni za snižavanje temperature. Ako dete dobije temperaturu u vrtiću, roditelj treba odmah da dođe po njega.</p></div>
+        </details>
+        <details class="rv">
+          <summary><span class="q">Dete nije vakcinisano?</span><span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+          <div class="body"><p>Ako dete zbog bolesti nije primilo vakcinu, prilaže se potvrda pedijatra o privremenoj kontraindikaciji. Kod trajne kontraindikacije potrebna je potvrda stručnog tima koji o njoj odlučuje.</p></div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RODITELJI ================= -->
+<section class="parents" id="roditelji">
+  <div class="wrap">
+    <div class="head center rv">
+      <span class="eyebrow"><svg><use href="#i-book"/></svg>Kutak za roditelje</span>
+      <h2>Tri brošure koje <em>vredi pročitati</em></h2>
+      <p><span class="s">Brošure za porodice dece predškolskog uzrasta.</span><span class="s">Izdvojili smo najvažnije savete iz svake.</span></p>
+    </div>
+    <div class="books">
+      <article class="book rv">
+        <div class="cov"><small>Brošura 1</small><svg><use href="#i-hand"/></svg></div>
+        <div class="tx">
+          <h3>Vaspitanje podrškom i pravilima</h3>
+          <p>Sigurnost, ljubav, prihvatanje i ohrabrenje su najvažniji u dečjim životima.</p>
+          <details><summary>Ključni saveti <svg><use href="#i-down"/></svg></summary>
+            <ul>
+              <li>Imajte na umu dugoročne ciljeve: šta želite za dete u budućnosti.</li>
+              <li>Budite nežni i podržavajući, ali uspostavite jasna pravila.</li>
+              <li>Rešavajte izazove bez kažnjavanja i grdnje.</li>
+              <li>Hvalite konkretno ponašanje i trud, ne samo uspeh.</li>
+              <li>Budite jasni, dosledni i ispunite dogovoreno.</li>
+            </ul>
+          </details>
+        </div>
+      </article>
+      <article class="book rv">
+        <div class="cov"><small>Brošura 2</small><svg><use href="#i-sun"/></svg></div>
+        <div class="tx">
+          <h3>Dobrobit dece</h3>
+          <p>Za dete je najvažnije da se oseća voljeno i sigurno. To je osnova njegove dobrobiti.</p>
+          <details><summary>Ključni saveti <svg><use href="#i-down"/></svg></summary>
+            <ul>
+              <li>Pokažite detetu da ga volite i poštujte njegova prava.</li>
+              <li>Ne radite umesto deteta ono što može samo (oblačenje, obedovanje).</li>
+              <li>Dozvolite mu da pogreši i podržite ga da ispravi grešku.</li>
+              <li>Igrajte se, istražujte i stvarajte zajedno.</li>
+              <li>Brinite i o svojoj dobrobiti: odmor, zabava, druženje.</li>
+            </ul>
+          </details>
+        </div>
+      </article>
+      <article class="book rv">
+        <div class="cov"><small>Brošura 3</small><svg><use href="#i-heart"/></svg></div>
+        <div class="tx">
+          <h3>Socijalno-emocionalno učenje</h3>
+          <p>Deca se ne rađaju sa veštinama za odnose sa drugima. One se uče od najranijeg uzrasta.</p>
+          <details><summary>Ključni saveti <svg><use href="#i-down"/></svg></summary>
+            <ul>
+              <li>Pitajte dete kako se oseća i pomozite mu da imenuje osećanja.</li>
+              <li>Napravite zajedno „Rečnik osećanja” od slika i crteža.</li>
+              <li>Uvedite znak „STOP” koji pomaže detetu da zastane pre reakcije.</li>
+              <li>Umesto „Baš si super” recite šta vam se konkretno dopalo.</li>
+            </ul>
+          </details>
+        </div>
+      </article>
+    </div>
+    <p class="src rv">Brošure za porodice izdate su uz podršku UNICEF-a. Štampane primerke pitajte u vrtiću.</p>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="pitanja">
+  <div class="wrap faq-grid">
+    <div class="faq-side rv">
+      <span class="eyebrow"><svg><use href="#i-feather"/></svg>Pitanja roditelja</span>
+      <div class="head" style="margin-bottom:0">
+        <h2>Pitaj <em>Petra Pana</em></h2>
+        <p><span class="s">Odgovori na ono što roditelji najčešće pitaju.</span><span class="s">Za sve ostalo, tu smo na 034 202 506.</span></p>
+      </div>
+      <div class="peter"><img src="assets/logo-icon.svg" alt=""></div>
+    </div>
+    <div class="acc">
+      <details class="rv"><summary><span class="q">Kako da prijavim dete?</span><span class="pm"><svg><use href="#i-plus"/></svg></span></summary><div class="body"><p>Popuni prijavu na dnu ove stranice ili nas pozovi. Javićemo ti se da se dogovorimo oko upisa i odgovorimo na sva pitanja.</p></div></details>
+      <details class="rv"><summary><span class="q">Od kog uzrasta primate decu?</span><span class="pm"><svg><use href="#i-plus"/></svg></span></summary><div class="body"><p>Imamo jaslice za decu do tri godine (tri jaslene grupe), vrtićke grupe od tri do pet i po godina i pripremni predškolski program.</p></div></details>
+      <details class="rv"><summary><span class="q">Kada je jutarnji prijem?</span><span class="pm"><svg><use href="#i-plus"/></svg></span></summary><div class="body"><p>Jutarnji prijem dece je od 6:00 do 8:00. Doručak je od 8:00 do 8:30.</p></div></details>
+      <details class="rv"><summary><span class="q">Gde se nalaze vaši vrtići?</span><span class="pm"><svg><use href="#i-plus"/></svg></span></summary><div class="body"><p>Petar Pan 1 i 2 su u Ilindenskoj 103, a Petar Pan 3 je u ulici Radovana Mićovića 22a, u Kragujevcu.</p></div></details>
+      <details class="rv"><summary><span class="q">Šta ako dete ima alergiju na hranu?</span><span class="pm"><svg><use href="#i-plus"/></svg></span></summary><div class="body"><p>Deci sa alergijom ili intolerancijom ishrana se prilagođava svakog dana i dobijaju odgovarajuću zamenu. Alergije se upisuju u zdravstveni karton pri upisu.</p></div></details>
+      <details class="rv"><summary><span class="q">Ko dovodi dete u periodu adaptacije?</span><span class="pm"><svg><use href="#i-plus"/></svg></span></summary><div class="body"><p>Poželjno je da dete dovodi i odvodi isti roditelj. Ako dolazi neko drugi, najavite to detetu. Pri rastanku nikada ne lažite dete kada ćete doći, i obavezno ispunite obećano.</p></div></details>
+      <details class="rv"><summary><span class="q">Da li deca idu na izlete i zimovanje?</span><span class="pm"><svg><use href="#i-plus"/></svg></span></summary><div class="body"><p>Da. Organizujemo izlete za mlađe i starije grupe, a deca starijih i pripremnih grupa idu na zimovanje i letovanje koje traje 7 dana.</p></div></details>
+      <details class="rv"><summary><span class="q">Kako znam šta dete jede?</span><span class="pm"><svg><use href="#i-plus"/></svg></span></summary><div class="body"><p>Jelovnik se menja svake nedelje i objavljujemo ga sa nutritivnim vrednostima. Ovonedeljni jelovnik možeš da pogledaš u <a href="#jelovnik">sekciji Kuhinja</a>.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= UPIS ================= -->
+<section class="enrol on-dark" id="upis">
+  <div class="stars" id="stars2" aria-hidden="true"></div>
+  <div class="wrap enrol-grid">
+    <div class="rv">
+      <span class="eyebrow"><svg><use href="#i-star"/></svg>Upis</span>
+      <div class="head" style="margin-bottom:0">
+        <h2>Druga zvezda desno, pa <em style="color:var(--gold)">pravo do nas</em></h2>
+        <p><span class="s">Ostavi kontakt i podatke o detetu.</span><span class="s">Javićemo ti se da se dogovorimo oko upisa.</span></p>
+      </div>
+      <ul class="c-list">
+        <li><span class="ico"><svg><use href="#i-phone"/></svg></span><div><b><a href="tel:+38134202506">034 202 506</a> · <a href="tel:+38134254255">034 254 255</a></b><span>Fiksni telefoni vrtića</span></div></li>
+        <li><span class="ico"><svg><use href="#i-phone"/></svg></span><div><b><a href="tel:+381641528173">064 152 81 73</a></b><span>Slavica Otović, direktor</span></div></li>
+        <li><span class="ico"><svg><use href="#i-phone"/></svg></span><div><b><a href="tel:+381642294427">064 229 44 27</a></b><span>Jelena Bogdanović, administracija</span></div></li>
+        <li><span class="ico"><svg><use href="#i-mail"/></svg></span><div><b><a href="mailto:info@petar-pan.rs">info@petar-pan.rs</a></b><span>Piši nam bilo kada</span></div></li>
+        <li><span class="ico"><svg><use href="#i-pin"/></svg></span><div><b>Ilindenska 103 · Radovana Mićovića 22a</b><span>34000 Kragujevac</span></div></li>
+      </ul>
+    </div>
+    <form class="form rv" id="form" novalidate>
+      <div id="formBody">
+        <h3>Prijava za upis</h3>
+        <p>Polja sa zvezdicom su obavezna.</p>
+        <div class="frow">
+          <div class="f"><label for="fr">Ime i prezime roditelja *</label><input id="fr" name="roditelj" autocomplete="name" required></div>
+          <div class="f"><label for="ft">Telefon *</label><input id="ft" name="telefon" type="tel" autocomplete="tel" required></div>
+        </div>
+        <div class="frow">
+          <div class="f"><label for="fd">Ime deteta *</label><input id="fd" name="dete" required></div>
+          <div class="f"><label for="fb">Datum rođenja deteta</label><input id="fb" name="rodjen" type="date"></div>
+        </div>
+        <div class="frow">
+          <div class="f full"><label for="fe">Email</label><input id="fe" name="email" type="email" autocomplete="email"></div>
+        </div>
+        <div class="frow">
+          <div class="f full"><label>Željeni vrtić</label>
+            <div class="seg">
+              <label><input type="radio" name="vrtic" value="Petar Pan 1 i 2, Ilindenska 103"><span>Ilindenska 103</span></label>
+              <label><input type="radio" name="vrtic" value="Petar Pan 3, Radovana Mićovića 22a"><span>Radovana Mićovića 22a</span></label>
+              <label><input type="radio" name="vrtic" value="Svejedno" checked><span>Svejedno</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="f full"><label for="fp">Poruka</label><textarea id="fp" name="poruka" rows="3" placeholder="Nešto o detetu ili pitanje za nas"></textarea></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Pošalji prijavu<span class="arr"><svg><use href="#i-arrow"/></svg></span></button>
+        <p class="fine">Prijava se šalje na info@petar-pan.rs iz tvog email programa.</p>
+      </div>
+      <div class="ok" id="formOk" role="status">
+        <svg><use href="#i-star"/></svg>
+        <h3>Hvala!</h3>
+        <p>Otvorili smo tvoj email program sa popunjenom prijavom. Kad je pošalješ, javićemo ti se.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="assets/logo-full.svg" alt="Petar Pan logo">
+        <p>Predškolska ustanova „Petar Pan” Kragujevac.</p>
+      </div>
+      <div>
+        <h4>Vrtići</h4>
+        <ul><li>Petar Pan 1 i 2<br>Ilindenska 103</li><li>Petar Pan 3<br>Radovana Mićovića 22a</li></ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul><li><a href="tel:+38134202506">034 202 506</a></li><li><a href="tel:+38134254255">034 254 255</a></li><li><a href="tel:+381641528173">064 152 81 73</a></li><li><a href="mailto:info@petar-pan.rs">info@petar-pan.rs</a></li></ul>
+      </div>
+      <div>
+        <h4>Pratite nas</h4>
+        <ul><li><b>Facebook</b><br>obdaniste.petar.pan</li><li><b>Instagram</b><br>@predskolska_ustanova_petar_pan</li><li><b>YouTube</b><br>kanal vrtića Petar Pan</li></ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 Predškolska ustanova „Petar Pan” Kragujevac · PIB 109677595 · MB 17893157</span>
+      <span>Lice za zaštitu podataka o ličnosti: Milan Joksimović</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar">
+  <a class="call" href="tel:+38134202506"><svg><use href="#i-phone"/></svg>Pozovi</a>
+  <a class="go" href="#upis">Prijavi dete</a>
+</div>
+
+<script>
+(function(){
+var RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- header, menu, mobile bar ---------- */
+var hdr=document.getElementById('hdr'),mbar=document.getElementById('mbar');
+function onS(){var y=scrollY;hdr.classList.toggle('scrolled',y>8);mbar.classList.toggle('on',y>640)}
+addEventListener('scroll',onS,{passive:true});onS();
+var bur=document.getElementById('burger'),mm=document.getElementById('mmenu');
+bur.addEventListener('click',function(){var o=bur.getAttribute('aria-expanded')!=='true';bur.setAttribute('aria-expanded',o);mm.classList.toggle('open',o);document.body.style.overflow=o?'hidden':''});
+mm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){bur.setAttribute('aria-expanded','false');mm.classList.remove('open');document.body.style.overflow=''})});
+
+/* ---------- reveal + counters ---------- */
+function count(el){var n=+el.dataset.count,s=el.dataset.suffix||'';if(RM){el.textContent=n+s;return}var t0=performance.now();(function f(t){var p=Math.min(1,(t-t0)/1200);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+s;if(p<1)requestAnimationFrame(f)})(t0)}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var el=e.target;el.classList.add('in');el.querySelectorAll('[data-count]').forEach(count);io.unobserve(el)})},{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv,.phase,.stats').forEach(function(el,i){io.observe(el)});
+/* stagger siblings */
+document.querySelectorAll('.offer,.team-lead,.phases,.books,.acc,.place-grid').forEach(function(g){[].forEach.call(g.children,function(c,i){c.style.transitionDelay=(i*80)+'ms'})});
+
+/* ---------- stars ---------- */
+['stars','stars2'].forEach(function(id){var s=document.getElementById(id);if(!s)return;for(var i=0;i<56;i++){var e=document.createElement('i');e.style.left=Math.random()*100+'%';e.style.top=Math.random()*100+'%';var z=Math.random()<.2?4:Math.random()<.5?4:2;e.style.width=e.style.height=z+'px';e.style.animationDelay=(-Math.random()*3)+'s';e.style.animationDuration=(2+Math.random()*3)+'s';e.style.opacity=.6;s.appendChild(e)}});
+
+/* ================= HERO: Zvončica ================= */
+var hero=document.getElementById('hero'),cv=document.getElementById('dust'),ctx=cv.getContext('2d'),fairy=document.getElementById('fairy');
+var art=document.getElementById('heroArt'),cards=[art.querySelector('.c-b'),art.querySelector('.c-main'),art.querySelector('.c-a')];
+var lete=hero.querySelector('.lete'),chips=art.querySelectorAll('.chip,.badge');
+var parts=[],dpr=Math.min(2,devicePixelRatio||1),W=0,H=0,running=false;
+function size(){var r=hero.getBoundingClientRect();W=r.width;H=r.height;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0)}
+function rel(el,fx,fy){var a=el.getBoundingClientRect(),h=hero.getBoundingClientRect();return{x:a.left-h.left+a.width*fx,y:a.top-h.top+a.height*fy}}
+function cr(p0,p1,p2,p3,t){var t2=t*t,t3=t2*t;return{x:.5*((2*p1.x)+(-p0.x+p2.x)*t+(2*p0.x-5*p1.x+4*p2.x-p3.x)*t2+(-p0.x+3*p1.x-3*p2.x+p3.x)*t3),y:.5*((2*p1.y)+(-p0.y+p2.y)*t+(2*p0.y-5*p1.y+4*p2.y-p3.y)*t2+(-p0.y+3*p1.y-3*p2.y+p3.y)*t3)}}
+function spline(pts,u){var n=pts.length-1,f=u*n,i=Math.min(n-1,Math.floor(f)),t=f-i;return cr(pts[Math.max(0,i-1)],pts[i],pts[i+1],pts[Math.min(n,i+2)],t)}
+var COLS=['255,236,170','255,210,94','255,255,255','255,190,120'];
+function emit(x,y,n,spread,up){for(var i=0;i<n;i++){parts.push({x:x+(Math.random()-.5)*spread,y:y+(Math.random()-.5)*spread,vx:(Math.random()-.5)*.6,vy:(up?-1.6:0)*Math.random()+Math.random()*.3,life:1,dec:.008+Math.random()*.014,r:1+Math.random()*2.8,c:COLS[(Math.random()*4)|0],tw:Math.random()*6})}}
+function star(x,y,r){ctx.beginPath();ctx.moveTo(x,y-r*2.4);ctx.quadraticCurveTo(x,y,x+r*2.4,y);ctx.quadraticCurveTo(x,y,x,y+r*2.4);ctx.quadraticCurveTo(x,y,x-r*2.4,y);ctx.quadraticCurveTo(x,y,x,y-r*2.4);ctx.fill()}
+function loop(){ctx.clearRect(0,0,W,H);for(var i=parts.length-1;i>=0;i--){var p=parts[i];p.x+=p.vx;p.y+=p.vy;p.vy+=.025;p.vx*=.99;p.life-=p.dec;p.tw+=.3;if(p.life<=0){parts.splice(i,1);continue}var a=p.life*(.6+.4*Math.sin(p.tw));ctx.fillStyle='rgba('+p.c+','+a+')';if(p.r>2.4)star(p.x,p.y,p.r*.6);else{ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,6.283);ctx.fill()}}
+  if(parts.length||running)requestAnimationFrame(loop);else ctx.clearRect(0,0,W,H)}
+function kick(){if(!running&&!parts.length){running=true;requestAnimationFrame(loop)}else running=true}
+function fly(pts,dur,hooks,done){kick();fairy.style.opacity=1;var t0=performance.now(),fired={};
+  (function step(t){var u=Math.min(1,(t-t0)/dur),e=u<.5?2*u*u:1-Math.pow(-2*u+2,2)/2,p=spline(pts,e);
+    fairy.style.transform='translate('+p.x+'px,'+p.y+'px)';emit(p.x,p.y,5,12,false);
+    hooks.forEach(function(h,k){if(!fired[k]&&e>=h.at){fired[k]=1;h.fn(p)}});
+    if(u<1)requestAnimationFrame(step);else{running=false;done&&done(p)}})(t0)}
+function finishHero(){cards.forEach(function(c){c.classList.add('up','float')});chips.forEach(function(c){c.classList.add('in')});lete.classList.add('glow')}
+function intro(){size();var h=hero.getBoundingClientRect(),mob=innerWidth<992;
+  var start={x:W+40,y:-40},b=rel(cards[0],.5,.3),m=rel(cards[1],.5,.12),a=rel(cards[2],.45,.4),l=rel(lete,.55,.45);
+  var pts=mob?[start,b,m,a,{x:l.x+80,y:a.y-120},l]:[start,{x:b.x+60,y:b.y-140},b,m,a,{x:(a.x+l.x)/2,y:Math.min(a.y,l.y)+40},l];
+  var lift=function(c,ch){return function(){c.classList.add('up');setTimeout(function(){c.classList.add('float')},1000);if(ch)ch.classList.add('in')}};
+  var badge=art.querySelector('.badge'),ct=art.querySelector('.chip.time'),ck=art.querySelector('.chip.kitchen');
+  var hooks=mob?[{at:.18,fn:lift(cards[0],ck)},{at:.4,fn:lift(cards[1],badge)},{at:.6,fn:lift(cards[2],ct)}]
+               :[{at:.26,fn:lift(cards[0],ck)},{at:.4,fn:lift(cards[1],badge)},{at:.6,fn:lift(cards[2],ct)}];
+  fly(pts,mob?3600:4200,hooks,function(p){lete.classList.add('glow');emit(p.x,p.y,60,24,true);fairy.style.opacity=0;setInterval(flyby,10000)})}
+function flyby(){if(document.hidden)return;var r=hero.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;size();
+  var m=rel(cards[1],.5,0),l=rel(lete,.5,0);
+  var pts=innerWidth<992?[{x:-40,y:m.y+40},{x:W*.3,y:m.y-20},{x:W*.7,y:m.y+60},{x:W+40,y:m.y}]:[{x:-40,y:l.y-120},{x:l.x,y:l.y-60},{x:m.x,y:m.y-40},{x:W+40,y:m.y+80}];
+  fly(pts,2600,[],function(){fairy.style.opacity=0})}
+if(RM){finishHero()}else{addEventListener('resize',size);var go=function(){setTimeout(intro,500)};if(document.readyState==='complete')go();else addEventListener('load',go)}
+
+/* ================= PROGRAMI tabs ================= */
+var tabs=[].slice.call(document.querySelectorAll('.tab'));
+function sel(t,focus){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;var p=document.getElementById(x.getAttribute('aria-controls'));p.hidden=!on;if(on){p.classList.add('in')}});if(focus)t.focus()}
+tabs.forEach(function(t,i){t.addEventListener('click',function(){sel(t)});t.addEventListener('keydown',function(e){var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(d){e.preventDefault();sel(tabs[(i+d+tabs.length)%tabs.length],true)}})});
+
+/* ================= JEDAN DAN: Zvončica sa skrolom ================= */
+var dw=document.getElementById('dayWrap'),svg=document.getElementById('dayPath'),base=svg.querySelector('.base'),done=svg.querySelector('.done'),df=document.getElementById('dayFairy'),stops=[].slice.call(document.querySelectorAll('.stop')),plen=0,marks=[],lastP=-1,lastPt=null;
+function buildPath(){var r=dw.getBoundingClientRect(),mob=innerWidth<=768;svg.setAttribute('viewBox','0 0 '+r.width+' '+r.height);svg.setAttribute('width',r.width);svg.setAttribute('height',r.height);
+  var pts=stops.map(function(s){var d=s.querySelector('.dot').getBoundingClientRect();return{x:d.left-r.left+d.width/2,y:d.top-r.top+d.height/2}});
+  var amp=mob?16:44,d='M'+pts[0].x+' '+(pts[0].y-80)+' L'+pts[0].x+' '+pts[0].y;
+  for(var i=1;i<pts.length;i++){var a=pts[i-1],b=pts[i],dy=b.y-a.y,s=(i%2?1:-1)*amp;d+=' C'+(a.x+s)+' '+(a.y+dy*.3)+' '+(b.x+s)+' '+(b.y-dy*.3)+' '+b.x+' '+b.y}
+  var last=pts[pts.length-1];d+=' L'+last.x+' '+(last.y+60);
+  base.setAttribute('d',d);done.setAttribute('d',d);plen=done.getTotalLength();done.style.strokeDasharray=plen;
+  marks=pts.map(function(p){var lo=0,hi=plen;for(var k=0;k<24;k++){var mid=(lo+hi)/2;if(done.getPointAtLength(mid).y<p.y)lo=mid;else hi=mid}return lo});lastP=-1;dayTick()}
+function dayTick(){if(!plen)return;var r=dw.getBoundingClientRect(),c=innerHeight*.55,p=Math.max(0,Math.min(1,(c-r.top)/r.height));if(Math.abs(p-lastP)<.0005)return;lastP=p;
+  var L=p*plen,pt=done.getPointAtLength(L);done.style.strokeDashoffset=plen-L;df.style.transform='translate('+pt.x+'px,'+pt.y+'px)';df.style.opacity=p>0&&p<1?1:p>=1?1:0;
+  stops.forEach(function(s,i){s.classList.toggle('lit',L>=marks[i]-4)});
+  if(lastPt&&!RM){sparkle(pt)}lastPt=pt}
+var dayDust=[];function sparkle(pt){if(dayDust.length>40)return;var e=document.createElement('i');e.style.cssText='position:absolute;left:'+(pt.x+(Math.random()-.5)*16)+'px;top:'+(pt.y+(Math.random()-.5)*16)+'px;width:4px;height:4px;border-radius:50%;background:#ffd25e;box-shadow:0 0 6px #ffe9a8;pointer-events:none;z-index:2;transition:transform 1.2s ease-out,opacity 1.2s ease-out';dw.appendChild(e);dayDust.push(e);requestAnimationFrame(function(){e.style.transform='translate('+((Math.random()-.5)*24)+'px,'+(16+Math.random()*24)+'px) scale(.4)';e.style.opacity=0});setTimeout(function(){e.remove();dayDust.splice(dayDust.indexOf(e),1)},1250)}
+if(RM){stops.forEach(function(s){s.classList.add('lit')})}
+var dayOn=false;new IntersectionObserver(function(es){dayOn=es[0].isIntersecting;if(dayOn)dayTick()}).observe(dw);
+addEventListener('scroll',function(){if(dayOn)requestAnimationFrame(dayTick)},{passive:true});
+addEventListener('resize',function(){clearTimeout(window.__bp);window.__bp=setTimeout(buildPath,150)});
+addEventListener('load',buildPath);if(document.fonts)document.fonts.ready.then(buildPath);
+
+/* ================= JELOVNIK ================= */
+var MENU=[
+ {d:'Pon',dt:'12.10.',m:[['Popara sa sirom, mlekom i pavlakom'],['Jabuka'],['Grašak sa svinjskim mesom','Hleb','Cvekla'],['Pogačice sa susamom']]},
+ {d:'Uto',dt:'13.10.',m:[['Pica pita','Jogurt'],['Čoko griz'],['Pileća supa sa knedlama','Musaka sa krompirom','Hleb','Vitaminska salata'],['Kruška']]},
+ {d:'Sre',dt:'14.10.',m:[['Pečenica, krem sir, ajvar','Hleb','Mleko'],['Kruška'],['Juneća krem čorba','Đuveč sa piletinom','Hleb','Salata od krastavca'],['Rolat sa pekmezom']]},
+ {d:'Čet',dt:'15.10.',m:[['Skuša sa povrćem','Hleb','Čaj od nane sa limunom'],['Koh'],['Potaž od blitve','Makarone zapečene sa jajima','Vitaminska salata'],['Grožđe']]},
+ {d:'Pet',dt:'16.10.',m:[['Buhtle','Kakao'],['Grožđe'],['Panirani oslić','Pire od spanaća','Hleb','Kupus salata'],['Štapići sa kimom']]}];
+var MT=[['Doručak','8:00–8:30'],['Užina','10:00–10:45'],['Ručak','13:00–14:00'],['Užina','16:00']];
+var daysEl=document.getElementById('days'),mealsEl=document.getElementById('meals');
+function showDay(i,anim){[].forEach.call(daysEl.children,function(b,k){b.setAttribute('aria-pressed',k===i)});
+  mealsEl.innerHTML=MT.map(function(t,k){return '<div class="meal'+(anim?' swap':'')+'"><div class="t">'+t[1]+'</div><h4>'+t[0]+'</h4><ul>'+MENU[i].m[k].map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul></div>'}).join('')}
+MENU.forEach(function(x,i){var b=document.createElement('button');b.className='daybtn';b.innerHTML=x.d+'<small>'+x.dt+'</small>';b.addEventListener('click',function(){showDay(i,true)});daysEl.appendChild(b)});
+var wd=new Date().getDay();showDay(wd>=1&&wd<=5?wd-1:0,false);
+
+/* ================= TIM rail ================= */
+var TEAM=[["nenad-jevtovic","Nenad Jevtović","Vaspitač"],["katarina-stalevic","Katarina Stalević","Medicinska sestra vaspitač"],["marija-jokic","Marija Jokić","Medicinska sestra vaspitač"],["milica-milosavljevic-ljusic","Milica Milosavljević Ljušić","Vaspitač"],["milica-vasilic","Milica Vasilić","Medicinska sestra vaspitač"],["danijela-glisovic","Danijela Glišović","Vaspitač"],["aleksandra-savic","Aleksandra Savić","Vaspitač"],["aleksandra-jovic","Aleksandra Jović","Vaspitač"],["jasmina-milivojevic","Jasmina Milivojević","Vaspitač"],["sandra-gobeljic","Sandra Gobeljić","Medicinska sestra vaspitač"],["marina-gojkovic","Marina Gojković","Vaspitač"],["sandra-antonijevic","Sandra Antonijević","Medicinska sestra vaspitač"],["tamara-radenovic","Tamara Radenović","Vaspitač"],["jana-radic","Jana Radić","Medicinska sestra vaspitač"],["sanja-nedeljkovic","Sanja Nedeljković","Vaspitač"],["marija-nikolic","Marija Nikolić","Vaspitač"],["marija-joksimovic","Marija Joksimović","Medicinska sestra vaspitač"],
+ ["jelena-gavrilovic","Jelena Gavrilović","Vaspitač"],["una-husak","Una Husak","Vaspitač"],["jasmina-savovic","Jasmina Savović","Medicinska sestra vaspitač"],["aleksandra-milic","Aleksandra Milić","Vaspitač"],["ivana-pavlovic","Ivana Pavlović","Vaspitač"],["aleksandra-rancic","Aleksandra Rančić","Medicinska sestra vaspitač"],["jelena-petrovic","Jelena Petrović","Vaspitač"],["bojana-rasic","Bojana Rašić","Vaspitač"],["ivana-prodanovic","Ivana Prodanović","Medicinska sestra vaspitač"],["milena-obradovic","Milena Obradović","Vaspitač"],["jovana-marjanovic","Jovana Marjanović","Medicinska sestra vaspitač"],["marijana-sreckovic","Marijana Srećković","Kuhinja"],["dragica-tomic","Dragica Tomić","Kuhinja"],["vesna-gajovic","Vesna Gajović","Kuhinja"],["danijela-matovic","Danijela Matović","Servirka"],["daliborka-pajevic","Daliborka Pajević","Servirka"],["tanja-vukovic","Tanja Vuković","Spremačica"],["nevena-djekic","Nevena Đekić","Spremačica"],["ranka-djordjevic","Ranka Đorđević","Spremačica"],["vladanka-jovanovic","Vladanka Jovanović","Spremačica"],["marija-blagojevic","Marija Blagojević","Spremačica"],["savica-marjanovic","Savica Marjanović","Spremačica"]];
+function mate(x){return '<div class="mate"><img src="assets/tim/'+x[0]+'.webp" alt="'+x[1]+'" loading="lazy" width="360" height="480"><div><b>'+x[1]+'</b><span>'+x[2]+'</span></div></div>'}
+var half=17,a1=TEAM.slice(0,half),a2=TEAM.slice(half);
+[['rail1',a1],['rail2',a2]].forEach(function(r){var row=document.querySelector('#'+r[0]+' .row'),h=r[1].map(mate).join('');row.innerHTML=h+h;row.lastElementChild&&[].slice.call(row.children,r[1].length).forEach(function(c){c.setAttribute('aria-hidden','true');c.querySelector('img').alt=''})});
+
+/* ================= strip ================= */
+var strip=document.getElementById('strip');
+document.querySelectorAll('[data-strip]').forEach(function(b){b.addEventListener('click',function(){strip.scrollBy({left:+b.dataset.strip*(strip.clientWidth*.8),behavior:RM?'auto':'smooth'})})});
+
+/* ================= galerija ================= */
+var tiles=[].slice.call(document.querySelectorAll('.tile'));
+document.querySelectorAll('.filter').forEach(function(f){f.addEventListener('click',function(){document.querySelectorAll('.filter').forEach(function(x){x.setAttribute('aria-pressed',x===f)});var c=f.dataset.f;tiles.forEach(function(t){t.classList.toggle('hide',c!=='sve'&&t.dataset.c!==c)})})});
+var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg');
+tiles.forEach(function(t){t.querySelector('button').addEventListener('click',function(){var i=t.querySelector('img');lbImg.src=i.src;lbImg.alt=i.alt;document.getElementById('lbT').textContent=t.querySelector('b').textContent;document.getElementById('lbS').textContent=t.querySelector('figcaption span').textContent;lb.showModal()})});
+document.getElementById('lbX').addEventListener('click',function(){lb.close()});
+lb.addEventListener('click',function(e){if(e.target===lb)lb.close()});
+
+/* ================= adaptacija: deck ================= */
+var TIPS=[
+ ['Uskladite dnevni ritam','Pre polaska u vrtić uskladite ritam kod kuće sa vrtićkim: vreme obedovanja i spavanja.'],
+ ['Pričajte lepo o vrtiću','Pozitivno pričajte o vrtiću. Nikako ne pretite detetu vrtićem.'],
+ ['Bez velikih promena','U prvim danima izbegavajte sve što može da dovede do napetosti: pregledi, odvikavanje od cucle ili pelena, selidba.'],
+ ['Kontinuitet','Adaptaciju planirajte bez velikih prekida, osim u slučaju bolesti deteta.'],
+ ['Postepeno uključivanje','Prvih dana roditelj bude uz dete, pa se postepeno odvaja i ostavlja dete sve duže, po savetu vaspitača.'],
+ ['Isti roditelj','Poželjno je da isti roditelj dovodi i odvodi dete. Ako dolazi neko drugi, najavite to detetu.'],
+ ['Igrajte se zajedno','Prvog dana se aktivno uključite u igru sa decom, da dete stekne poverenje posmatrajući vas.'],
+ ['Omiljena igračka','Neka dete donese omiljenu igračku. Tako ostaje u kontaktu sa kućom i sigurnije je.'],
+ ['Vreme posle vrtića','Kada dođete kući, odvojite vreme za igru i strpljivo odgovarajte na pitanja o danu.'],
+ ['Nikad ne lažite','Ne govorite da ćete „brzo doći” ako to nije tako. Recite kada dolazite i ispunite obećanje.'],
+ ['Dobra komunikacija','Gradite dobru saradnju sa vaspitačima. Nerazumevanje se uvek prenosi i na dete.'],
+ ['Puno topline','I na kraju: puno topline, nežnosti i strpljenja. Dajte detetu šansu da iskaže osećanja.']];
+var deck=document.getElementById('deck'),dots=document.getElementById('dDots');
+deck.innerHTML=TIPS.map(function(t,i){return '<article class="tip" aria-label="Savet '+(i+1)+' od 12"><div class="no">'+(i<9?'0':'')+(i+1)+'<small>/ 12</small></div><h3>'+t[0]+'</h3><p>'+t[1]+'</p></article>'}).join('');
+dots.innerHTML=TIPS.map(function(){return '<i></i>'}).join('');
+function di(){return Math.round(deck.scrollLeft/deck.clientWidth)}
+function dset(){var k=di();[].forEach.call(dots.children,function(d,i){d.classList.toggle('on',i===k)})}
+deck.addEventListener('scroll',function(){requestAnimationFrame(dset)},{passive:true});dset();
+function dgo(d){var k=Math.max(0,Math.min(TIPS.length-1,di()+d));deck.scrollTo({left:k*deck.clientWidth+k*16,behavior:RM?'auto':'smooth'})}
+document.getElementById('dPrev').addEventListener('click',function(){dgo(-1)});
+document.getElementById('dNext').addEventListener('click',function(){dgo(1)});
+
+/* ================= ranac ================= */
+var items=[].slice.call(document.querySelectorAll('.item')),bag=document.getElementById('bagSvg'),bc=document.getElementById('bagCount'),bd=document.getElementById('bagDone');
+function upd(){var n=items.filter(function(i){return i.getAttribute('aria-pressed')==='true'}).length;bc.textContent=n+'/6';bd.classList.toggle('on',n===6)}
+items.forEach(function(it){it.addEventListener('click',function(){var on=it.getAttribute('aria-pressed')!=='true';it.setAttribute('aria-pressed',on);
+  if(on&&!RM){var s=it.querySelector('.ii').getBoundingClientRect(),b=bag.getBoundingClientRect(),f=document.createElement('div');f.className='flyer';f.innerHTML=it.querySelector('.ii').innerHTML;f.style.left=s.left+'px';f.style.top=s.top+'px';f.style.color='#4a7a22';document.body.appendChild(f);
+    requestAnimationFrame(function(){requestAnimationFrame(function(){f.style.transform='translate('+(b.left+b.width/2-s.left-20)+'px,'+(b.top+b.height*.55-s.top-20)+'px) scale(.4) rotate(200deg)';f.style.opacity=.2})});
+    setTimeout(function(){f.remove();bag.classList.remove('wiggle');void bag.getBoundingClientRect();bag.classList.add('wiggle');upd()},700)}else upd()})});
+
+/* ================= forma ================= */
+var form=document.getElementById('form');
+form.addEventListener('submit',function(e){e.preventDefault();var bad=null;['fr','ft','fd'].forEach(function(id){var el=document.getElementById(id);var ok=el.value.trim()!=='';el.style.borderColor=ok?'':'#c2402a';if(!ok&&!bad)bad=el});if(bad){bad.focus();return}
+  var fd=new FormData(form),L=['Prijava za upis u PU Petar Pan','','Roditelj: '+fd.get('roditelj'),'Telefon: '+fd.get('telefon'),'Email: '+(fd.get('email')||'-'),'Ime deteta: '+fd.get('dete'),'Datum rođenja: '+(fd.get('rodjen')||'-'),'Željeni vrtić: '+fd.get('vrtic'),'','Poruka:',fd.get('poruka')||'-'];
+  location.href='mailto:info@petar-pan.rs?subject='+encodeURIComponent('Prijava za upis: '+fd.get('dete'))+'&body='+encodeURIComponent(L.join('\n'));
+  document.getElementById('formBody').style.display='none';document.getElementById('formOk').classList.add('on')});
+})();
+</script>
+</body>
+</html>
